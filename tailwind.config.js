@@ -20,6 +20,7 @@ module.exports = {
       },
       colors: {
         verdeLeaf: '#025541',
+        verdeClaroLeaf: '#029673',
         grisLeaf: '#4C4C4C',
         offWhite: '#F2F2F2',
       },
