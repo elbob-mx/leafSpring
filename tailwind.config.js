@@ -23,6 +23,8 @@ module.exports = {
         verdeClaroLeaf: '#029673',
         grisLeaf: '#4C4C4C',
         offWhite: '#F2F2F2',
+        offBlack: '#161616',
+        neonBlue: '#4AE7D9'
       },
     },
   },
