@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
-    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
   <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
   <title>Leaf Spring México</title>
@@ -18,14 +16,14 @@
 <body class="overflow-x-hidden bg-offWhite" tabindex="0">
 
   <!-- MAIN-INICIO -->
-  <main class="relative flex flex-col justify-center">
+  <div class="relative flex flex-col justify-center">
 
     <!-- BACKGROUND IMAGE FIXED -->
-    <img src="./img/banner/ls-inicio-main-banner.jpg" alt="banner principal leaf spring mexico"
-      class="object-cover w-screen h-screen">
+    <img id="intro" src="./img/banner/ls-inicio-main-banner.jpg" alt="banner principal leaf spring mexico"
+      class="object-cover w-screen h-screen brightness-50">
 
     <!-- NAV BAR -->
-      <nav id="nav-bar" class="absolute flex flex-col w-1/5 p-6 space-y-8 shadow-xl rounded-2xl ml-16 shadow-black/50 bg-offWhite"
+      <nav id="nav-bar" class="absolute flex flex-col w-1/5 p-6 space-y-8 shadow-xl rounded-sm ml-16 shadow-black/50 bg-offWhite"
         tabindex="0">
 
           <!-- LOGO -->
@@ -35,35 +33,39 @@
           </a>
           <!-- NAV BAR MENU -->
 
-            <a href="#"
-              class="text-2xl font-semibold tracking-wide transition-all duration-500 ease-in-out font-sourceSans text-neutral-500 group"><span
+            <a href="#inicio"
+              class="text-2xl font-semibold tracking-wide transition-all duration-500 ease-in-out font-inter text-neutral-500 group"><span
                 class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">inicio</span></a>
 
             <a href="#"
-              class="text-2xl font-semibold tracking-wide transition-all duration-500 ease-in-out font-sourceSans text-neutral-500 group"><span
+              class="text-2xl font-semibold tracking-wide transition-all duration-500 ease-in-out font-inter text-neutral-500 group"><span
                 class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">nosotros</span></a>
 
             <a href="#"
-              class="text-2xl font-semibold tracking-wide transition-all duration-500 ease-in-out font-sourceSans text-neutral-500 group"><span
+              class="text-2xl font-semibold tracking-wide transition-all duration-500 ease-in-out font-inter text-neutral-500 group"><span
                 class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">productos</span></a>
 
             <a href="#"
-              class="text-2xl font-semibold tracking-wide transition-all duration-500 ease-in-out font-sourceSans text-neutral-500 group"><span
+              class="text-2xl font-semibold tracking-wide transition-all duration-500 ease-in-out font-inter text-neutral-500 group"><span
                 class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">contacto</span></a>
 
           <!-- ! BOTON DARK MODE? -->
           <a href=""
-            class="w-full px-6 py-2 font-semibold tracking-wide text-center text-white duration-500 rounded-xl bg-verdeLeaf hover:bg-verdeClaroLeaf font-sourceSans hover:drop-shadow-md">inicia sesión</a>
+            class="w-full px-6 py-2 font-semibold tracking-wide text-center text-white duration-500 rounded-xl bg-verdeLeaf hover:bg-verdeClaroLeaf font-inter hover:drop-shadow-md">inicia sesión</a>
 
         </>
       </nav>
 
       <!-- CHEVRON DOWN ARROW -->
-      <i></i>
-      <!-- MAIN / INICIO -->
-    </main>
+      <a href="#conoceme" class="absolute self-center justify-center text-xl text-center duration-700 text-neonPurple hover:text-neonBlue hover:translate-y-2 font-inconsolata">
+        <p class="tracking-wider">conóceme</p>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
 
-    <section class="relative w-screen h-screen bg-cyan-200 flex flex-col">TEST!</section>
+      <!-- MAIN / INICIO -->
+    </div>
+
+    <section class="relative w-screen h-screen bg-violet-400 flex flex-col">TEST!</section>
     
 </body>
 

@@ -16,7 +16,7 @@ module.exports = {
       fontFamily: {
         firaCode: "Fira Code, monospoace",
         oswald: "Oswald, sans-serif",
-        sourceSans: "Source Sans Pro, sans-serif",
+        inter: "Inter, sans-serif",
       },
       colors: {
         verdeLeaf: '#025541',
