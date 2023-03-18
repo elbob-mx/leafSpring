@@ -14,9 +14,10 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        firaCode: "Fira Code, monospoace",
+        robotoMono: "Roboto Mono, monospace",
         oswald: "Oswald, sans-serif",
-        inter: "Inter, sans-serif",
+        roboto: "Roboto, sans-serif",
+        prompt: "Prompt, sans-serif"
       },
       colors: {
         verdeLeaf: '#025541',
