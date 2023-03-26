@@ -18,15 +18,15 @@
 <body class="overflow-x-hidden bg-offWhite" tabindex="0">
 
   <!-- MAIN-INICIO -->
-  <div class="relative flex flex-col">
+  <div class="flex flex-col">
     <!-- BACKGROUND IMAGE FIXED -->
 
 
     <!-- NAV BAR -->
-    <section class="w-screen h-screen">
+    <section class="relative w-screen h-screen">
 
       <nav id="nav-bar"
-        class="fixed top-0 z-50 flex flex-row items-center justify-between w-screen p-3 laptop:justify-around bg-offWhite laptop:p-6"
+        class="fixed top-0 z-50 flex flex-row items-center justify-between w-screen p-6 laptop:justify-around bg-offWhite"
         tabindex="0">
 
         <!-- LOGO / MENU / HAMBURGER (small size!)-->
@@ -51,26 +51,29 @@
             class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">contacto</span></a>
       </nav>
 
-      <section class="relative">
-        <p class="absolute self-center mx-auto text-5xl text-center text-offWhite ">LEAF SPRING MEXIVO</p>
+      <!-- BANNER CONTINUAR BUTTON -->
+      <!-- CHEVRON DOWN ARROW -->
+      <section class="relative flex flex-col">
+        <a href="#conoceme"
+          class="absolute self-center justify-center p-3 tablet:text-2xl text-xl text-center duration-700 text-neonPurple hover:text-yellow-400 text-offWhite hover:translate-y-2 font-robotoMono z-50 bottom-[3%] font-bold">
+          <p class="tracking-wider">continuar</p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+        <!-- SLOGAN -->
+        <p class="absolute z-40 text-white laptop:top-[38%] top-[40%] left-[5%] text-5xl laptop:text-8xl font-oswald">LA <br> SOLUCIÓN  <br> EN <br> SUSPENSIONES </p>
+        <!-- HERO BANNER -->
         <img id="intro" src="./img/banner/ls-inicio-main-banner.jpg" alt="banner principal leaf spring mexico"
-          class="absolute object-cover object-center w-screen h-screen brightness-50">
+          class="z-0 object-cover object-center w-screen h-screen brightness-50">
       </section>
     </section>
 
-    <!-- CHEVRON DOWN ARROW -->
-    <a href="#conoceme"
-      class="self-center justify-center p-6 text-xl text-center duration-700 text-neonPurple hover:text-lime-500 text-verdeLeaf hover:translate-y-2 font-robotoMono">
-      <p class="tracking-wider">continuar</p>
-      <i class="fa-solid fa-chevron-down"></i>
-    </a>
+
+
 
     <!-- MAIN / INICIO -->
   </div>
 
-  <section class="relative flex flex-col w-screen h-screen">TEST!</section>
-
-  <section class="bg-neonBlue">TEST</section>
+  
 
 </body>
 
