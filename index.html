@@ -18,7 +18,7 @@
 <body class="overflow-x-hidden bg-offWhite" tabindex="0">
 
   <!-- MAIN-INICIO -->
-  <div class="flex flex-col">
+  <div class="relative flex flex-col">
     <!-- BACKGROUND IMAGE FIXED -->
 
 
@@ -26,17 +26,12 @@
     <section class="w-screen h-screen">
 
       <nav id="nav-bar"
-        class="flex flex-row items-center self-center justify-around w-screen p-3 laptop:p-6 bg-offWhite"
+        class="fixed top-0 z-50 flex flex-row items-center justify-between w-screen p-3 laptop:justify-around bg-offWhite laptop:p-6"
         tabindex="0">
 
-        <!-- LOGO -->
-        <div>
-          <a href="img/icons/hamburger-md-svgrepo-com.svg" title="menu icon" class="h-12 laptop:hidden"></a>
-          <a href="#inicio">
-            <img src="img/logos/leaf-spring/ls-logo.svg" alt="leaf spring mexico logo" title="leaf spring mexico logo"
-              class="h-12 laptop:h-20">
-          </a>
-        </div>
+        <!-- LOGO / MENU / HAMBURGER (small size!)-->
+        <a href="#inicio"><img src="img/logos/leaf-spring/ls-logo.svg" alt="leaf spring mexico logo" title="leaf spring mexico logo" class="h-12 tablet:h-20"></a>
+        <a href="#menu"><img src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu" title="hamburger menu" class="h-12 laptop:hidden"></a>
         <!-- NAV BAR MENU -->
 
         <a href="#inicio"
@@ -56,15 +51,16 @@
             class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">contacto</span></a>
       </nav>
 
-      <section>
+      <section class="relative">
+        <p class="absolute self-center mx-auto text-5xl text-center text-offWhite ">LEAF SPRING MEXIVO</p>
         <img id="intro" src="./img/banner/ls-inicio-main-banner.jpg" alt="banner principal leaf spring mexico"
-          class="object-cover w-screen brightness-50 h-[calc(100vh-128px)]">
+          class="absolute object-cover object-center w-screen h-screen brightness-50">
       </section>
     </section>
 
     <!-- CHEVRON DOWN ARROW -->
     <a href="#conoceme"
-      class="self-center justify-center text-xl text-center duration-700 text-neonPurple hover:text-lime-500 text-offWhite hover:translate-y-2 font-robotoMono">
+      class="self-center justify-center p-6 text-xl text-center duration-700 text-neonPurple hover:text-lime-500 text-verdeLeaf hover:translate-y-2 font-robotoMono">
       <p class="tracking-wider">continuar</p>
       <i class="fa-solid fa-chevron-down"></i>
     </a>
