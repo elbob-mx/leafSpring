@@ -18,14 +18,13 @@
 <body class="overflow-x-hidden bg-offWhite" tabindex="0">
 
   <!-- MAIN-INICIO -->
-  <div class="flex flex-col">
 
     <!-- NAV BAR -->
     <section id="inicio" class="relative w-screen h-screen">
 
       <nav id="nav-bar"
         class="fixed top-0 z-50 flex flex-row items-center justify-between w-screen p-6 drop-shadow-lg laptop:justify-around bg-offWhite"
-        tabindex="0">
+        tabindex="-1">
 
         <!-- LOGO / MENU / HAMBURGER (small size!)-->
         <a href="#inicio"><img src="img/logos/leaf-spring/ls-logo.svg" alt="leaf spring mexico logo" title="leaf spring mexico logo" class="h-12 tablet:h-20"></a>
@@ -52,7 +51,7 @@
       <!-- BANNER CONTINUAR BUTTON -->
       <!-- CHEVRON DOWN ARROW -->
       <section class="relative flex flex-col">
-        <a href="#pre-productos"
+        <a href="#categorias"
           class="absolute self-center justify-center p-3 tablet:text-2xl text-xl text-center duration-500 text-neonPurple hover:text-yellow-400 text-offWhite hover:translate-y-3 font-roboto z-40 laptop:bottom-[3%] bottom-[8%] font-medium tracking-wider">
           <p class="tracking-widest">continuar</p>
           <i class="fa-solid fa-chevron-down"></i>
@@ -64,42 +63,41 @@
           class="z-0 object-cover object-center w-screen h-screen brightness-50">
       </section>
     </section>
-
-  </div>
-  
+    
+    
   <!-- MAIN / CATEGORIAS BANNER -->
   <section id="pre-productos" class="w-screen h-[calc(100vh-128px)]">
 
     <!-- CATEGORIAS -->
-    <div id="categorias" class="grid items-center w-auto h-full grid-cols-2 p-0 align-middle laptop:flex laptop:flex-row small:flex-col bg-neutral-200 laptop:h-1/5 justify-evenly">
+    <div id="categorias" class="grid items-center w-auto h-1/5 grid-cols-3 p-0 laptop:flex laptop:flex-row bg-neutral-200 justify-evenly">
       <p class="text-xl font-semibold tracking-widest font-prompt text-verdeLeaf">categorías:</p>
       <a href="#">
-        <img src="img/icons/icon-muelles.svg" alt="categoria muelles" class="h-32 col-span-1 duration-500 hover:scale-110">
+        <img src="img/icons/icon-muelles.svg" alt="categoria muelles" class="h-32 hover:bg-neutral-100 p-1 rounded-xl col-span-1 duration-500 hover:scale-110">
       </a>
       
       <a href="#">
-        <img src="img/icons/icon-muelles-z.svg" alt="categoria muelles z" class="h-32 col-span-1 duration-500 hover:scale-110">
+        <img src="img/icons/icon-muelles-z.svg" alt="categoria muelles z" class="h-32 hover:bg-neutral-100 p-1 rounded-xl col-span-1 duration-500 hover:scale-110">
       </a>
 
       <a href="#">
-        <img src="img/icons/icon-sist-frenos.svg" alt="categoria sistema frenos" class="h-32 duration-500 hover:scale-110">
+        <img src="img/icons/icon-sist-frenos.svg" alt="categoria sistema frenos" class="h-32 hover:bg-neutral-100 p-1 rounded-xl col-span-1 duration-500 hover:scale-110">
       </a>
       
       <a href="#">
-        <img src="img/icons/icon-bolsa-aire.svg" alt="categoria bolsa aire" class="h-32 duration-500 hover:scale-110">
+        <img src="img/icons/icon-bolsa-aire.svg" alt="categoria bolsa aire" class="h-32 hover:bg-neutral-100 p-1 rounded-xl col-span-1 duration-500 hover:scale-110">
       </a>
 
       <a href="#">
-        <img src="img/icons/icon-amortiguares.svg" alt="categoria amortiguadores" class="h-32 duration-500 hover:scale-110">
+        <img src="img/icons/icon-amortiguares.svg" alt="categoria amortiguadores" class="h-32 hover:bg-neutral-100 p-1 rounded-xl col-span-1 duration-500 hover:scale-110">
       </a>
 
       <a href="#">
-        <img src="img/icons/icon-prods-hule-natural.svg" alt="categoria productos hule natural" class="h-32 duration-500 hover:scale-110">
+        <img src="img/icons/icon-prods-hule-natural.svg" alt="categoria productos hule natural" class="h-32 hover:bg-neutral-100 p-1 rounded-xl col-span-1 duration-500 hover:scale-110">
       </a>
     </div>
 
     <!-- PRODUCTOS DESTACADOS -->
-    <div title="ir a productos destacados mercadolibre" id="mercadoshop" class="flex flex-row items-center h-full text-2xl tracking-widest bg-white justify-evenly laptop:h-2/5">
+    <div title="ir a productos destacados mercadolibre" id="mercadoshop" class="flex flex-row items-center text-2xl tracking-widest bg-white justify-evenly h-2/5">
       <h2 class="font-medium font-prompt"><a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/nuestros-productos">productos destacado:</a></h2>
 
       <a title="aumento tacon lobo" target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/MLM-832376750-aumento-tacon-calza-aluminio-ford-lobo-2004-2018-delantero-_JM">
@@ -113,16 +111,16 @@
       <a title="calza aluminio toyota" target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/MLM-1331266899-aumento-lift-kit-toyota-pickup-4runner-t100-4wd-delantero-_JM">
         <img src="img/destacados-ml/lift-kit-aumento-toyota.webp" alt="lift kit toyota" class="h-40 mx-4 duration-500 hover:scale-105">
       </a>
-
+      
       <a title="calza aluminio toyota" target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/MLM-918196872-soporte-cabina-freightliner-century-columbia-cascadia-_JM">
         <img src="img/destacados-ml/soporte-cabina-freightliner.webp" alt="lift kit toyota" class="h-40 mx-4 duration-500 hover:scale-105">
       </a>
-
+      
       <a title="ver más productos" class="duration-500 hover:translate-x-2" target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/nuestros-productos"><p class="self-end mb-6 ml-6 text-base font-bold text-verdeClaroLeaf font-roboto">ver más <i class="font-bold fa-solid fa-chevron-right"></i></p></a>
     </div>
     
     <!-- MERCADOSHOPS -->
-    <div id="mercadoshop" class="flex flex-row items-center justify-center h-full text-4xl tracking-widest bg-white laptop:h-2/5">
+    <div id="mercadoshop" class="flex flex-row items-center justify-center text-4xl tracking-widest bg-white h-2/5">
       <h2 class="font-prompt"><a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/">ir a mercadoshops</a></h2>
       <a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/MLM-832376750-aumento-tacon-calza-aluminio-ford-lobo-2004-2018-delantero-_JM">
         <img src="img/destacados-ml/aumento-tacon-lobo.webp" alt="categoria productos hule natural" class="h-40 duration-500 hover:scale-110">
@@ -132,6 +130,8 @@
 
   <div class="h-[calc(100vh-128px)] bg-cyan-300">TEST</div>
   <div class="h-[calc(100vh-128px)] bg-cyan-500">TEST</div>
+
+
 
 </body>
 
