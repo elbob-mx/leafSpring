@@ -62,7 +62,7 @@
   <!-- BANNER / SLOGAN -->
   <div class="relative flex flex-col">
     <a href="#productos"
-      class="absolute self-center justify-center p-3 tablet:text-2xl text-xl text-center duration-500 text-neonPurple hover:text-yellow-400 text-offWhite hover:translate-y-3 font-roboto z-40 laptop:bottom-[3%] bottom-[8%] font-medium tracking-wider">
+      class="absolute self-center justify-center p-3 tablet:text-2xl text-xl text-center duration-500 text-neonPurple hover:text-yellow-400 text-offWhite hover:translate-y-3 font-roboto z-40 laptop:bottom-[3%] bottom-[8%] font-medium tracking-wider rounded-lg">
       <p class="tracking-widest">continuar</p>
       <i class="fa-solid fa-chevron-down"></i>
     </a>
@@ -76,7 +76,7 @@
 
   <!-- PRODUCTOS / MAIN -->
   <!-- CATEGORIAS -->
-  <div id="productos" class="w-screen h-screen bg-grisLeaf">
+  <div id="productos" class="laptop:w-screen laptop:h-screen bg-grisLeaf">
 
     <div id="categorias"
       class="grid items-center justify-center h-screen grid-cols-2 justify-items-center laptop:justify-around laptop:flex laptop:flex-row laptop:h-1/5 bg-zinc-200">
@@ -89,7 +89,9 @@
         <p class="mt-3 text-sm font-medium tracking-normal font-roboto laptop:text-grisLeaf text-zinc-200">Con un
           extenso surtido,
           satisfacemos tus necesidades</p>
-        <p class="mt-3 text-sm font-medium tracking-normal font-roboto laptop:text-grisLeaf text-zinc-400 laptop:hidden">* selecciona una categoría</p>
+        <p
+          class="mt-3 text-sm font-medium tracking-normal font-roboto laptop:text-grisLeaf text-zinc-400 laptop:hidden">
+          * selecciona una categoría</p>
       </div>
 
       <button tabindex="-1">
@@ -133,18 +135,22 @@
             title="sistemas de frenos"></a>
       </button>
 
-      <div class="col-span-2 laptop:hidden">
-      <a href="#destacados">
-      <i class="col-span-2 text-2xl fa-solid fa-chevron-down"><span class="text-xl font-medium align-middle font-roboto"> destacados</span></i></a>
+      <!-- BOTON CONTINUAR DESTACADOS -->
+      <div class="w-4/6 col-span-2 p-3 text-center rounded-lg laptop:hidden bg-verdeClaroLeaf">
+        <a href="#destacados">
+          <i class="col-span-2 text-2xl text-offWhite fa-solid fa-chevron-down"><span
+              class="text-xl font-medium tracking-wider align-middle font-roboto text-offWhite"> destacados</span></i></a>
       </div>
     </div>
 
-    <!-- DESTACADOS -->
-    <div id="destacados" class="grid items-center justify-around grid-cols-2 bg-white laptop:flex laptop:flex-row h-2/5">
+    <!-- SECCION DESTACADOS -->
+    <div id="destacados"
+      class="grid items-center justify-center h-screen grid-cols-2 bg-white justify-items-center laptop:justify-around laptop:flex laptop:flex-row laptop:h-2/5">
 
-      <div class="w-32">
-        <p class="text-3xl font-semibold tracking-wide font-roboto text-verdeLeaf">Destacados:</p>
-        <p class="mt-3 text-sm font-medium tracking-normal font-roboto text-grisLeaf"> Respaldados por las mejores
+      <div
+        class="items-center justify-center col-span-2 p-2 mx-5 text-center rounded-lg laptop:w-32 bg-grisLeaf laptop:bg-transparent laptop:text-left justify-items-center">
+        <p class="text-3xl font-semibold tracking-wide font-roboto laptop:text-verdeLeaf text-emerald-400">Destacados:</p>
+        <p class="mt-3 text-sm font-medium tracking-normal font-roboto laptop:text-grisLeaf text-zinc-200"> Respaldados por las mejores
           marcas a nivel nacional e internacional</p>
       </div>
 
@@ -152,7 +158,7 @@
         <a target="_blank"
           href="https://servimuellesaccesorios.mercadoshops.com.mx/MLM-832376750-aumento-tacon-calza-aluminio-ford-lobo-2004-2018-delantero-_JM"
           accesskey="s" tabindex="0">
-          <img src="./img/destacados-ml/aumento-tacon-lobo.webp" class="h-40 duration-500 rounded-lg hover:scale-110"
+          <img src="./img/destacados-ml/aumento-tacon-lobo.webp" class="h-32 duration-500 rounded-lg laptop:h-40 hover:scale-110"
             alt="aumento tacon lobo" title="aumento tacon lobo"></a>
       </button>
 
@@ -161,7 +167,7 @@
           href="https://servimuellesaccesorios.mercadoshops.com.mx/MLM-1341644380-lift-kit-aumento-tacon-calza-aluminio-tracker-89-98-_JM"
           accesskey="s" tabindex="0">
           <img src="./img/destacados-ml/lift-kit-aumento-tracker.webp"
-            class="h-40 duration-500 rounded-lg hover:scale-110" alt="aumento tacon tracker"
+            class="h-24 duration-500 rounded-lg laptop:h-40 hover:scale-110" alt="aumento tacon tracker"
             title="aumento tacon tracker"></a>
       </button>
 
@@ -170,7 +176,7 @@
           href="https://servimuellesaccesorios.mercadoshops.com.mx/MLM-1331266899-aumento-lift-kit-toyota-pickup-4runner-t100-4wd-delantero-_JM"
           accesskey="s" tabindex="0">
           <img src="./img/destacados-ml/lift-kit-aumento-toyota.webp"
-            class="h-40 duration-500 rounded-lg hover:scale-110" alt="aumento kit toyota 4runner"
+            class="duration-500 rounded-lg laptop:h-40 h-28 hover:scale-110" alt="aumento kit toyota 4runner"
             title="aumento kit toyota 4runner"></a>
       </button>
 
@@ -179,22 +185,29 @@
           href="https://servimuellesaccesorios.mercadoshops.com.mx/MLM-918196872-soporte-cabina-freightliner-century-columbia-cascadia-_JM"
           accesskey="s" tabindex="0">
           <img src="./img/destacados-ml/soporte-cabina-freightliner.webp"
-            class="h-40 duration-500 rounded-lg hover:scale-110" alt="soporte cabina freightliner"
+            class="h-32 duration-500 rounded-lg laptop:h-40 hover:scale-110" alt="soporte cabina freightliner"
             title="soporte cabina freightliner"></a>
       </button>
 
-      <div class="duration-500 text-verdeLeaf hover:translate-x-2">
+      <div class="col-span-2 duration-500 text-verdeLeaf hover:translate-x-2">
         <a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/nuestros-productos">
           <p
-            class="text-3xl font-semibold tracking-widest duration-500 font-roboto text-verdeLeaf hover:text-verdeClaroLeaf">
-            ver más<i class="ml-2 align-middle fa-solid fa-arrow-right-from-bracket"></i>
+            class="text-3xl font-semibold tracking-widest text-center duration-500 font-roboto text-verdeLeaf hover:text-verdeClaroLeaf">
+            ver más en ML<i class="ml-2 align-middle fa-solid fa-arrow-right-from-bracket"></i>
           </p>
         </a>
+
+        <div class="col-span-2 p-3 mt-6 text-center rounded-lg laptop:hidden bg-verdeClaroLeaf ">
+          <a href="#resume">
+            <i class="col-span-2 text-2xl fa-solid fa-chevron-down text-offWhite"><span
+                class="text-xl font-medium tracking-wider align-middle font-roboto text-offWhite"> contacto</span></i></a>
+        </div>
+
       </div>
     </div>
 
     <!-- MERCADOSHOPS -->
-    <div class="grid items-center grid-cols-4 h-2/5 bg-verdeLeaf" tabindex="-1">
+    <div class="items-center grid-cols-4 laptop:grid h-2/5 bg-verdeLeaf small:hidden" tabindex="-1">
       <div class="col-span-3 duration-500 text-verdeLeaf hover:-translate-y-2">
         <a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/nuestros-productos" tabindex="0">
           <p
@@ -216,24 +229,24 @@
   <!-- MAPS / FOOTER -->
   <div id="resume"
     class="items-center justify-center w-screen h-screen align-middle bg-black text-offWhite font-roboto">
-    <div class="grid items-center justify-center grid-cols-2 h-2/3 bg-zinc-200">
-      <div class="flex flex-col items-center justify-center h-full p-10 bg-zinc-300">
+    <div class="grid items-center justify-center laptop:grid-cols-2 small:grid-cols-1 laptop:h-2/3 bg-zinc-200">
+      <div class="flex flex-col items-center justify-center h-full py-8 text-center laptop:p-10 bg-zinc-300">
         <p class="pb-4 text-2xl font-medium tracking-wide text-grisLeaf"><i
             class="text-2xl text-verdeLeaf fa-solid fa-building"></i> Nuestras oficinas:</p>
         <iframe class="items-center justify-center w-5/6 align-middle h-2/3"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.1340018219994!2d-103.34668838464898!3d20.6641266055009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b21d0bda0f4b%3A0x39e7705f2d9aae6!2sC.%20Gante%20156%2C%20Las%20Conchas%2C%2044460%20Guadalajara%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1680376441582!5m2!1ses-419!2smx"
           width="400" height="400" style="border:1" frameborder=”1″ allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p class="pt-4 text-xl font-medium tracking-wide text-grisLeaf font-"><i
+        <p class="px-12 pt-4 text-xl font-medium tracking-wide laptop:px-0 text-grisLeaf font-"><i
             class="text-xl text-red-500 fa-solid fa-location-dot"></i> Gante 156 / Las Conchas / Guadalajara, Jal. MX.
         </p>
         <p class="pt-4 text-xl font-medium tracking-wide text-grisLeaf font-roboto"><i
             class="text-xl fa-brands fa-whatsapp text-[#075E54]"></i> (33) 2578-7385</p>
       </div>
 
-      <div class="p-20">
-        <h2 class="pb-4 text-3xl font-medium tracking-wide text-verdeLeaf">Quienes somos</h2>
-        <p class="text-lg leading-loose tracking-wide text-grisLeaf">
+      <div class="px-12 py-6 laptop:p-20">
+        <h2 class="pb-2 text-2xl font-medium tracking-wide laptop:text-3xl laptop:pb-4 text-verdeLeaf">Quienes somos</h2>
+        <p class="text-base leading-relaxed tracking-wide laptop:leading-loose laptop:text-lg text-grisLeaf">
           <span class="font-bold text-verdeClaroLeaf">Leaf Spring Mexico S.A. de C.V.</span> es una solución integral en
           el campo de
           suspensiones para equipo de carga ligero, pesado y extra pesado,
@@ -247,7 +260,7 @@
     </div>
 
     <!-- FOOTER -->
-    <div id="foote" class="grid w-screen grid-cols-2 p-10 text-2xl h-1/3 bg-grisLeaf">
+    <div id="footer" class="grid w-screen grid-cols-1 p-10 text-2xl laptop:grid-cols-2 laptop:h-1/3 bg-grisLeaf">
 
       <div>
 
