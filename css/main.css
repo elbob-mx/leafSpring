@@ -608,6 +608,10 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
 .m-3 {
   margin: 0.75rem;
 }
@@ -1160,6 +1164,14 @@ video {
   padding-top: 2rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1513,6 +1525,10 @@ video {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .small\:pt-8 {
+    padding-top: 2rem;
+  }
+
   .small\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1534,6 +1550,14 @@ video {
 @media (min-width: 976px) {
   .laptop\:bottom-\[3\%\] {
     bottom: 3%;
+  }
+
+  .laptop\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .laptop\:block {
+    display: block;
   }
 
   .laptop\:flex {
@@ -1608,6 +1632,10 @@ video {
     align-items: center;
   }
 
+  .laptop\:justify-end {
+    justify-content: flex-end;
+  }
+
   .laptop\:justify-around {
     justify-content: space-around;
   }
@@ -1644,6 +1672,14 @@ video {
 
   .laptop\:pb-4 {
     padding-bottom: 1rem;
+  }
+
+  .laptop\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .laptop\:pt-0 {
+    padding-top: 0px;
   }
 
   .laptop\:text-left {
