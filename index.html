@@ -17,6 +17,35 @@
 
 <body class="flex flex-col w-full overflow-x-hidden antialiased bg-offWhite text-grisLeaf" tabindex="-1">
 
+  <!-- HAMBURGER MENU MOBILE -->
+  <div>
+    <!-- HAMBURGER MENU ICON -->
+    <div class="fixed top-10 right-8 text-4xl cursor-pointer">
+      <img onclick="Open(this)" src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu" title="hamburger menu"
+        class="h-6 laptop:hidden">
+    </div>
+    <!-- MAIN MENU -->
+    <div id="ham" class="fixed bg-verdeLeaf w-0 h-screen text-offWhite flex justify-center items-center text-4xl tracking-wide overflow-hidden">
+      <ul class="font-roboto">
+        <li class="hover:text-amber-400 hover:translate-x-4 duration-500"><a href="index.html">Inicio</a></li>
+        <li class="hover:text-amber-400 hover:translate-x-4 duration-500"><a href="nosotros.html">Nosotros</a></li>
+        <li class="hover:text-amber-400 hover:translate-x-4 duration-500"><a href="productos.html">Productos</a></li>
+        <li class="hover:text-amber-400 hover:translate-x-4 duration-500"><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+    <!-- HEADING -->
+    <div class="flex items-center h-screen m-auto max-w-[70ch]">
+      <div>
+        <h2 class="text-3xl mb-5 tracking-wide font-bold font-roboto">Menu</h2>
+        <span class="font-semibold">
+          <p class="mb-4 font-roboto">Lorem ipsum dolor sit amet.</p>
+          <p class="mb-4 font-roboto">Lorem ipsum dolor sit amet.</p>
+          <p class="mb-4 font-roboto">Lorem ipsum dolor sit amet.</p>
+        </span>
+      </div>
+    </div>
+  </div>
+
   <!-- NAVBAR -->
   <nav id="inicio"
     class="top-0 z-50 flex flex-row self-center w-screen p-3 laptop:items-center laptop:justify-around laptop:p-6 laptop:w-screen bg-zinc-100">
@@ -24,14 +53,6 @@
       <a href="#inicio">
         <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring" class="h-16 pl-2 laptop:pl-0 laptop:h-24">
       </a>
-
-      <!-- HAMBURGER MENU MOBILE -->
-      <div>
-        <a href="#">
-          <img src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu" title="hamburger menu"
-            class="h-6 pr-4 laptop:hidden"></a>
-        </a>
-      </div>
 
       <!-- MENU -->
       <ul class="hidden laptop:flex-row laptop:gap-24 laptop:list-none laptop:flex">
@@ -233,7 +254,8 @@
         </a>
       </div>
 
-      <div class="col-span-1 row-span-2 grid grid-flow-col bg-verdeClaroLeaf h-full w-full justify-center items-center align-middle">
+      <div
+        class="col-span-1 row-span-2 grid grid-flow-col bg-verdeClaroLeaf h-full w-full justify-center items-center align-middle">
         <a href="#resume">
           <div
             class="text-xl font-roboto font-medium text-center tablet:text-2xl tracking-wider duration-500 hover:translate-y-2 text-offWhite hover:text-amber-400">
@@ -320,6 +342,7 @@
 
     </footer>
 
+    <script src="js/actions.js"></script>
 </body>
 
 </html>
