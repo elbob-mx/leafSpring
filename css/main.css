@@ -612,6 +612,30 @@ video {
   right: 2rem;
 }
 
+.top-9 {
+  top: 2.25rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -754,6 +778,10 @@ video {
   height: 100vh;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .w-4\/6 {
   width: 66.666667%;
 }
@@ -780,6 +808,10 @@ video {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.origin-left {
+  transform-origin: left;
 }
 
 .cursor-pointer {
@@ -852,6 +884,10 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .scroll-smooth {
