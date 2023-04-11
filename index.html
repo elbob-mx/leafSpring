@@ -19,17 +19,16 @@
 
   <!-- MAIN MENU -->
   <div id="ham"
-    class="fixed hidden bg-verdeLeaf text-offWhite h-screen w-screen flex flex-col justify-center items-center text-4xl tracking-wide overflow-x-hidden overflow-y-hidden z-50 origin-left duration-500 laptop:hidden">
+    class="fixed z-50 flex flex-col items-center justify-center hidden w-screen h-screen overflow-x-hidden overflow-y-hidden text-4xl tracking-wide duration-500 origin-left bg-verdeLeaf text-offWhite laptop:hidden">
 
     <ul class="font-roboto">
-      <li class="hover:text-amber-400 hover:translate-x-4 duration-500"><a href="index.html">Inicio</a></li>
-      <li class="hover:text-amber-400 hover:translate-x-4 duration-500"><a href="nosotros.html">Nosotros</a></li>
-      <li class="hover:text-amber-400 hover:translate-x-4 duration-500"><a href="productos.html">Productos</a>
-      </li>
-      <li class="hover:text-amber-400 hover:translate-x-4 duration-500"><a href="#">Contacto</a></li>
+      <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="index.html">Inicio</a></li>
+      <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="nosotros.html">Nosotros</a></li>
+      <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="productos.html">Productos</a></li>
+      <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="#">Contacto</a></li>
     </ul>
     <!-- BOTON CERRAR -->
-    <div id="closeBtn" class="absolute top-9 right-5 text-3xl cursor-pointer">
+    <div id="closeBtn" class="absolute text-3xl cursor-pointer top-9 right-5">
       <i name="cerrar" onclick="Close(this)" class="fa-solid fa-xmark" style="color: #f2f2f2;"></i>
     </div>
   </div>
@@ -37,7 +36,7 @@
   <!-- NAVBAR -->
   <nav id="inicio"
     class="top-0 z-40 flex flex-row self-center w-screen p-3 laptop:items-center laptop:justify-around laptop:p-6 laptop:w-screen bg-zinc-100">
-    <div class="flex flex-row items-center align-middle justify-between flex-grow mx-auto laptop:justify-around">
+    <div class="flex flex-row items-center justify-between flex-grow mx-auto align-middle laptop:justify-around">
       <a href="#inicio">
         <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring" class="h-16 pl-2 laptop:pl-0 laptop:h-24">
       </a>
@@ -45,9 +44,9 @@
       <!-- HAMBURGER MENU MOBILE -->
       <div>
         <!-- HAMBURGER MENU ICON -->
-        <div id="hamBtn" class="fixed flex flex-row align-middle right-4 top-8 text-4xl cursor-pointer">
+        <div id="hamBtn" class="fixed flex flex-row text-4xl align-middle cursor-pointer right-4 top-8">
           <img onclick="Open(this)" src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu"
-            title="hamburger menu" class="h-6 laptop:hidden">
+            title="hamburger menu" class="h-6 duration-500 laptop:hidden active:rotate-90">
         </div>
 
 
@@ -90,7 +89,7 @@
     </a>
 
     <h1
-      class="absolute z-40 ml-12 text-5xl tracking-wider text-center uppercase laptop:text-left font-oswald laptop:text-8xl text-offWhite top-1/4">
+      class="absolute z-40 flex flex-col self-center ml-0 text-5xl tracking-wider text-center uppercase laptop:self-start laptop:ml-12 laptop:text-left font-oswald laptop:text-8xl text-offWhite top-1/4">
       la<br>solución<br>en<br>suspensiones</h1>
     <img src="./img/banner/ls-inicio-main-banner.jpg" alt="banner principal leaf spring mexico"
       class="w-screen object-cover laptop:h-[calc(100vh-144px)] h-[calc(100vh-64px)] brightness-50 bg-black">
@@ -241,7 +240,7 @@
 
     <!-- MERCADOSHOPS -->
     <div class="items-center grid-cols-6 grid-rows-2 laptop:grid h-2/5 bg-verdeLeaf small:hidden" tabindex="-1">
-      <div class="col-span-5 duration-500 text-verdeLeaf hover:-translate-y-2 row-span-2">
+      <div class="col-span-5 row-span-2 duration-500 text-verdeLeaf hover:-translate-y-2">
         <a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/nuestros-productos" tabindex="0">
           <p
             class="tracking-wider text-center duration-500 laptop:text-6xl small:text-2xl font-roboto text-zinc-300 hover:text-offWhite font-extralight">
@@ -252,10 +251,10 @@
       </div>
 
       <div
-        class="col-span-1 row-span-2 grid grid-flow-col bg-verdeClaroLeaf h-full w-full justify-center items-center align-middle">
+        class="grid items-center justify-center w-full h-full grid-flow-col col-span-1 row-span-2 align-middle bg-verdeClaroLeaf">
         <a href="#resume">
           <div
-            class="text-xl font-roboto font-medium text-center tablet:text-2xl tracking-wider duration-500 hover:translate-y-2 text-offWhite hover:text-amber-400">
+            class="text-xl font-medium tracking-wider text-center duration-500 font-roboto tablet:text-2xl hover:translate-y-2 text-offWhite hover:text-amber-400">
             <p class="">continuar</p>
             <i class="fa-solid fa-chevron-down"></i>
           </div>
@@ -291,10 +290,11 @@
           el campo de
           suspensiones para equipo de carga ligero, pesado y extra pesado,
           respaldada con personal con más de treinta años de experiencia.
+          <br><br>
           Además de nuestra línea de muelles, contamos con una gran variedad
           de accesorios tales como: bolsas de aire para suspensión,
-          Amortiguadores, Núcleos para tensor, Bujes de hule natural, así como,
-          Tambores de freno, zapatas y balatas.
+          amortiguadores, núcleos para tensor, bujes de hule natural, así como,
+          tambores de freno, zapatas y balatas.
         </p>
       </div>
     </div>
@@ -328,8 +328,8 @@
           2578-7385</p>
         <p class="pb-2"><i class="laptop:text-2xl fa-solid fa-phone text-verdeClaroLeaf"></i> tel: (33) 3645-0696</p>
         <p class="pb-2"><i class="fa-solid fa-fax text-verdeClaroLeaf"></i> fax: (33) 3144-8289</p>
-        <p title="enviar correo a leaf spring mexico" class="duration-500 laptop:hover:pl-2"><a
-            href="mailto:leafspringmexico@gmail.com"><i class="fa-solid fa-envelope text-verdeClaroLeaf"></i>
+        <p title="enviar correo a leaf spring mexico" class="duration-500 laptop:hover:pl-2 laptop:hover:text-yellow-400"><a
+            href="mailto:leafspringmexico@gmail.com"><i class="duration-500 fa-solid fa-envelope text-verdeClaroLeaf"></i>
             leafspringmexico@gmail.com</a></p>
       </div>
 
