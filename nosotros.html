@@ -17,236 +17,94 @@
 
 <body class="flex flex-col w-full overflow-x-hidden antialiased bg-offWhite text-grisLeaf" tabindex="-1">
 
+  <!-- MAIN MENU -->
+  <div id="ham"
+    class="fixed z-50 flex flex-col items-center justify-center hidden w-screen h-screen overflow-x-hidden overflow-y-hidden text-4xl tracking-wide duration-500 origin-left bg-verdeLeaf text-offWhite laptop:hidden">
+
+    <ul class="font-roboto">
+      <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="index.html">Inicio</a></li>
+      <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="nosotros.html">Nosotros</a></li>
+      <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="productos.html">Productos</a></li>
+      <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="contacto.html">Contacto</a></li>
+    </ul> <!-- BOTON CERRAR -->
+    <div id="closeBtn" class="absolute text-3xl cursor-pointer top-9 right-5">
+      <i name="cerrar" onclick="Close(this)" class="fa-solid fa-xmark text-offWhite"></i>
+    </div>
+  </div>
+
+
   <!-- NAVBAR -->
   <nav id="inicio"
-    class="top-0 z-50 flex flex-row self-center w-screen p-3 laptop:items-center laptop:justify-around laptop:p-6 laptop:w-screen bg-zinc-100">
-    <div class="flex flex-row items-center justify-between flex-grow mx-auto laptop:justify-around">
+    class="top-0 z-40 flex flex-row self-center w-screen p-3 laptop:items-center laptop:justify-around laptop:p-6 laptop:w-screen bg-zinc-100">
+    <div class="flex flex-row items-center justify-between flex-grow mx-auto align-middle laptop:justify-around">
       <a href="#inicio">
         <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring" class="h-16 pl-2 laptop:pl-0 laptop:h-24">
       </a>
 
       <!-- HAMBURGER MENU MOBILE -->
       <div>
-        <a href="#">
-          <img src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu" title="hamburger menu"
-            class="h-6 pr-4 laptop:hidden"></a>
-        </a>
+        <!-- HAMBURGER MENU ICON -->
+        <div id="hamBtn"
+          class="laptop:hidden fixed flex flex-row text-4xl align-middle cursor-pointer right-3 top-6 bg-zinc-200 p-2 rounded-md">
+          <img onclick="Open(this)" src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu"
+            title="hamburger menu" class="h-6 duration-500 laptop:hidden">
+        </div>
+
+
+        <!-- MENU -->
+        <ul class="hidden laptop:flex-row laptop:gap-24 laptop:list-none laptop:flex">
+
+          <li class="items-center">
+            <a href="index.html"
+              class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
+                class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">inicio</span></a>
+          </li>
+
+          <li class="items-center">
+            <a href="nosotros.html"
+              class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
+                class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">nosotros</span></a>
+          </li>
+
+          <li class="items-center">
+            <a href="#inicio"
+              class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
+                class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">productos</span></a>
+          </li>
+
+          <li class="items-center">
+            <a href="#inicio"
+              class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
+                class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">contacto</span></a>
+          </li>
+        </ul>
       </div>
-
-      <!-- MENU -->
-      <ul class="hidden laptop:flex-row laptop:gap-24 laptop:list-none laptop:flex">
-
-        <li class="items-center">
-          <a href="index.html"
-            class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
-              class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">inicio</span></a>
-        </li>
-
-        <li class="items-center">
-          <a href="nosotros.html"
-            class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
-              class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">nosotros</span></a>
-        </li>
-
-        <li class="items-center">
-          <a href="#inicio"
-            class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
-              class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">productos</span></a>
-        </li>
-
-        <li class="items-center">
-          <a href="#inicio"
-            class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
-              class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">contacto</span></a>
-        </li>
-      </ul>
-    </div>
   </nav>
 
   <!-- BANNER / SLOGAN -->
   <div class="relative flex flex-col">
-    <a href="#productos"
-      class="absolute self-center justify-center p-3 tablet:text-2xl text-xl text-center duration-500 text-neonPurple hover:text-yellow-400 text-offWhite hover:translate-y-3 font-roboto z-40 laptop:bottom-[3%] bottom-[8%] font-medium tracking-wider rounded-lg">
+    <a href="#acerca"
+      class="block absolute laptop:hidden self-center justify-center p-3 tablet:text-2xl text-xl text-center duration-500 text-neonPurple hover:text-yellow-400 text-offWhite hover:translate-y-3 font-roboto z-40 laptop:bottom-[3%] bottom-[8%] font-medium tracking-wider rounded-lg">
       <p class="tracking-widest">continuar</p>
       <i class="fa-solid fa-chevron-down"></i>
     </a>
 
     <h1
-      class="absolute z-40 ml-12 text-5xl tracking-wider text-center uppercase laptop:text-left font-oswald laptop:text-8xl text-offWhite top-1/4">
-      la<br>solución<br>en<br>suspensiones</h1>
+      class="absolute z-40 flex flex-col self-center ml-0 text-4xl tracking-wider text-center uppercase laptop:self-start laptop:ml-12 laptop:text-left font-oswald laptop:text-6xl text-offWhite top-1/4">
+      más<br>sobre<br>nosotros</h1>
     <img src="./img/banner/ls-inicio-main-banner.jpg" alt="banner principal leaf spring mexico"
-      class="w-screen object-cover laptop:h-[calc(100vh-144px)] h-[calc(100vh-64px)] brightness-50 bg-black">
+      class="w-screen object-cover laptop:h-[calc(50vh-144px)] h-[calc(100vh-64px)] brightness-50 bg-black">
   </div>
 
-  <!-- PRODUCTOS / MAIN -->
-  <!-- CATEGORIAS -->
-  <div id="productos" class="laptop:w-screen laptop:h-screen bg-grisLeaf">
+  <!-- NOSOTROS / MAIN -->
+  
+  <section id="acerca" class="grid grid-flow-col laptop:col-span-2 col-span-1 h-auto w-screen bg-offWhite pt-20 laptop:pt-10 pb-10 px-10 justify-center laptop:gap-20 gap-8">
+   
+    <div class="grid laptop:col-span-1 font-semibold text-xl leading-relaxed"> <span class="font-bold text-5xl">Lorem, ipsum dolor.</span>Los aumentos de aluminio marca servimuelles® tienen en el mercado un prestigio y calidad de más de 25 años, respaldados por su durabilidad, dando la confianza de evitar cualquier riesgo de fractura.</div>
 
-    <div id="categorias"
-      class="grid items-center justify-center h-screen grid-cols-2 justify-items-center laptop:justify-around laptop:flex laptop:flex-row laptop:h-1/5 bg-zinc-200">
-
-      <div
-        class="col-span-2 p-2 mx-5 text-center rounded-lg laptop:w-32 bg-grisLeaf laptop:bg-transparent laptop:text-left">
-
-        <p class="text-3xl font-semibold tracking-wide text-emerald-500 font-roboto laptop:text-verdeLeaf">Categorías:
-        </p>
-        <p class="mt-3 text-sm font-medium tracking-normal font-roboto laptop:text-grisLeaf text-zinc-200">Con un
-          extenso surtido,
-          satisfacemos tus necesidades</p>
-        <p
-          class="mt-3 text-sm font-medium tracking-normal font-roboto laptop:text-grisLeaf text-zinc-400 laptop:hidden">
-          * selecciona una categoría</p>
-      </div>
-
-      <button tabindex="-1">
-        <a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/amortiguadores" accesskey="s"
-          tabindex="0">
-          <img src="./img/icons/icon-amortiguares.svg"
-            class="duration-500 rounded-lg h-36 laptop:h-40 hover:scale-105 hover:bg-zinc-300" alt="amortiguadores"
-            title="amortiguadores"></a>
-      </button>
-
-      <button tabindex="-1">
-        <a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/bolsa-aire" accesskey="s"
-          tabindex="0">
-          <img src="./img/icons/icon-bolsa-aire.svg"
-            class="h-40 duration-500 rounded-lg hover:scale-105 hover:bg-zinc-300" alt="bolsas de aire"
-            title="bolsas de aire"></a>
-      </button>
-
-      <button tabindex="-1">
-        <a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/hule-natural" accesskey="s"
-          tabindex="0">
-          <img src="./img/icons/icon-prods-hule-natural.svg"
-            class="h-40 duration-500 rounded-lg hover:scale-105 hover:bg-zinc-300" alt="productos de hule natural"
-            title="productos de hule natural"></a>
-      </button>
-
-      <button tabindex="-1">
-        <a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/nuestros-productos" accesskey="s"
-          tabindex="0">
-          <img src="./img/icons/icon-muelles.svg" class="h-40 duration-500 rounded-lg hover:scale-105 hover:bg-zinc-300"
-            alt="muelles" title="muelles"></a>
-      </button>
-
-      <button tabindex="-1">
-        <a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/nuestros-productos" accesskey="s"
-          tabindex="0">
-          <img src="./img/icons/icon-muelles-z.svg"
-            class="h-40 duration-500 rounded-lg hover:scale-105 hover:bg-zinc-300" alt="muelles en z"
-            title="muelles en z"></a>
-      </button>
-
-      <button tabindex="-1">
-        <a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/nuestros-productos" accesskey="s"
-          tabindex="0">
-          <img src="./img/icons/icon-sist-frenos.svg"
-            class="h-40 duration-500 rounded-lg hover:scale-105 hover:bg-zinc-300" alt="sistemas de frenos"
-            title="sistemas de frenos"></a>
-      </button>
-
-      <!-- BOTON CONTINUAR A DESTACADOS -->
-      <div class="w-4/6 col-span-2 p-3 mb-3 text-center rounded-lg laptop:hidden bg-verdeClaroLeaf">
-        <a href="#destacados">
-          <i class="col-span-2 text-2xl text-offWhite fa-solid fa-chevron-down"><span
-              class="text-xl font-medium tracking-wider align-middle font-roboto text-offWhite">
-              destacados</span></i></a>
-      </div>
+    <div class="grid laptop:col-span-1 leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum dolorum suscipit perferendis quos unde eveniet atque deserunt fuga praesentium debitis omnis architecto minima molestias, itaque quam modi, laborum quibusdam quae totam maxime! Excepturi, nostrum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum dolorum suscipit perferendis quos unde eveniet atque deserunt fuga praesentium debitis omnis architecto minima molestias, itaque quam modi, laborum quibusdam quae totam maxime! Excepturi, nostrum?
     </div>
-
-    <!-- SECCION DESTACADOS -->
-    <div id="destacados"
-      class="grid items-center justify-center w-screen h-screen grid-cols-2 bg-white justify-items-center laptop:justify-around laptop:flex laptop:flex-row laptop:h-2/5">
-
-      <div
-        class="items-center justify-center col-span-2 p-2 mx-5 text-center rounded-lg laptop:w-32 bg-grisLeaf laptop:bg-transparent laptop:text-left justify-items-center">
-        <p class="text-3xl font-semibold tracking-wide font-roboto laptop:text-verdeLeaf text-emerald-400">Destacados:
-        </p>
-        <p class="mt-3 text-sm font-medium tracking-normal font-roboto laptop:text-grisLeaf text-zinc-200"> Respaldados
-          por las mejores
-          marcas a nivel nacional e internacional</p>
-      </div>
-
-      <button tabindex="-1">
-        <a target="_blank"
-          href="https://servimuellesaccesorios.mercadoshops.com.mx/MLM-832376750-aumento-tacon-calza-aluminio-ford-lobo-2004-2018-delantero-_JM"
-          accesskey="s" tabindex="0">
-          <img src="./img/destacados-ml/aumento-tacon-lobo.webp"
-            class="h-32 duration-500 rounded-lg laptop:h-40 hover:scale-110" alt="aumento tacon lobo"
-            title="aumento tacon lobo"></a>
-      </button>
-
-      <button tabindex="-1">
-        <a target="_blank"
-          href="https://servimuellesaccesorios.mercadoshops.com.mx/MLM-1341644380-lift-kit-aumento-tacon-calza-aluminio-tracker-89-98-_JM"
-          accesskey="s" tabindex="0">
-          <img src="./img/destacados-ml/lift-kit-aumento-tracker.webp"
-            class="h-24 duration-500 rounded-lg laptop:h-40 hover:scale-110" alt="aumento tacon tracker"
-            title="aumento tacon tracker"></a>
-      </button>
-
-      <button tabindex="-1">
-        <a target="_blank"
-          href="https://servimuellesaccesorios.mercadoshops.com.mx/MLM-1331266899-aumento-lift-kit-toyota-pickup-4runner-t100-4wd-delantero-_JM"
-          accesskey="s" tabindex="0">
-          <img src="./img/destacados-ml/lift-kit-aumento-toyota.webp"
-            class="duration-500 rounded-lg laptop:h-40 h-28 hover:scale-110" alt="aumento kit toyota 4runner"
-            title="aumento kit toyota 4runner"></a>
-      </button>
-
-      <button tabindex="-1">
-        <a target="_blank"
-          href="https://servimuellesaccesorios.mercadoshops.com.mx/MLM-918196872-soporte-cabina-freightliner-century-columbia-cascadia-_JM"
-          accesskey="s" tabindex="0">
-          <img src="./img/destacados-ml/soporte-cabina-freightliner.webp"
-            class="h-32 duration-500 rounded-lg laptop:h-40 hover:scale-110" alt="soporte cabina freightliner"
-            title="soporte cabina freightliner"></a>
-      </button>
-
-      <div class="col-span-2 duration-500 text-verdeLeaf hover:translate-x-2">
-        <a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/nuestros-productos">
-          <p
-            class="text-2xl font-semibold tracking-widest text-center duration-500 font-roboto text-verdeLeaf hover:text-verdeClaroLeaf">
-            ver más opciones <i class="ml-2 align-middle fa-solid fa-arrow-right-from-bracket"></i>
-          </p>
-        </a>
-
-        <div class="col-span-2 p-3 mt-6 text-center rounded-lg laptop:hidden bg-verdeClaroLeaf ">
-          <a href="#resume">
-            <i class="col-span-2 text-2xl fa-solid fa-chevron-down text-offWhite"><span
-                class="text-xl font-medium tracking-wider align-middle font-roboto text-offWhite">
-                contacto</span></i></a>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- MERCADOSHOPS -->
-    <div class="items-center grid-cols-6 grid-rows-2 laptop:grid h-2/5 bg-verdeLeaf small:hidden" tabindex="-1">
-      <div class="col-span-5 duration-500 text-verdeLeaf hover:-translate-y-2 row-span-2">
-        <a target="_blank" href="https://servimuellesaccesorios.mercadoshops.com.mx/nuestros-productos" tabindex="0">
-          <p
-            class="tracking-wider text-center duration-500 laptop:text-6xl small:text-2xl font-roboto text-zinc-300 hover:text-offWhite font-extralight">
-            Ir a mercadoshop <span class="font-semibold">Leaf Spring MX</span></p>
-          <p class="font-roboto text-amber-400 laptop:text-sm small:text-xs text-center tracking-[0.2em] pt-4">
-            Encuentra la solución que necesitas. <span class="text-base font-bold">Fácil. Rápido. Seguro.</span></p>
-        </a>
-      </div>
-
-      <div
-        class="col-span-1 row-span-2 grid grid-flow-col bg-verdeClaroLeaf h-full w-full justify-center items-center align-middle">
-        <a href="#resume">
-          <div
-            class="text-xl font-roboto font-medium text-center tablet:text-2xl tracking-wider duration-500 hover:translate-y-2 text-offWhite hover:text-amber-400">
-            <p class="">continuar</p>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-        </a>
-      </div>
-
-    </div>
-
-  </div>
+  </section>
 
   <!-- MAPS / FOOTER -->
   <div id="resume"
@@ -255,7 +113,8 @@
       <div class="flex flex-col items-center justify-center h-full py-8 text-center laptop:p-10 bg-zinc-300">
         <p class="pb-4 text-2xl font-medium tracking-wide text-grisLeaf"><i
             class="text-2xl text-verdeLeaf fa-solid fa-building"></i> Nuestras oficinas:</p>
-        <iframe class="items-center justify-center w-5/6 align-middle h-2/3"
+        <iframe title="ubicacion oficinas leaf spring mexico"
+          class="items-center justify-center w-5/6 align-middle h-2/3"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.1340018219994!2d-103.34668838464898!3d20.6641266055009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b21d0bda0f4b%3A0x39e7705f2d9aae6!2sC.%20Gante%20156%2C%20Las%20Conchas%2C%2044460%20Guadalajara%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1680376441582!5m2!1ses-419!2smx"
           width="400" height="400" style="border:1" frameborder=”1″ allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -273,17 +132,18 @@
           el campo de
           suspensiones para equipo de carga ligero, pesado y extra pesado,
           respaldada con personal con más de treinta años de experiencia.
+          <br><br>
           Además de nuestra línea de muelles, contamos con una gran variedad
           de accesorios tales como: bolsas de aire para suspensión,
-          Amortiguadores, Núcleos para tensor, Bujes de hule natural, así como,
-          Tambores de freno, zapatas y balatas.
+          amortiguadores, núcleos para tensor, bujes de hule natural, así como,
+          tambores de freno, zapatas y balatas.
         </p>
       </div>
     </div>
 
     <!-- FOOTER -->
     <footer id="footer"
-      class="grid items-center w-screen grid-cols-1 p-10 laptop:text-2xl laptop:grid-cols-2 laptop:h-1/3 bg-grisLeaf">
+      class="grid items-center w-screen h-screen grid-cols-1 p-10 laptop:text-2xl laptop:grid-cols-2 laptop:h-1/3 bg-grisLeaf">
 
 
       <div class="pb-6 laptop:pb-0">
@@ -292,16 +152,19 @@
             alt="logo leaf spring mexico"></a>
         <ul>
           <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
-              href="#inicio">inicio</a></li>
+              href="inicio.html">inicio</a></li>
 
           <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
-              href="#inicio">nosotros</a></li>
+              href="nosotros.html">nosotros</a></li>
 
           <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
-              href="#inicio">productos</a></li>
+              href="productos.html">productos</a></li>
+
+          <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-amber-400"
+              href="https://leafspringmexico.mercadoshops.com.mx/">mercadoshop</a></li>
 
           <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
-              href="#inicio">contacto</a></li>
+              href="contacto.html">contacto</a></li>
         </ul>
       </div>
 
@@ -310,8 +173,10 @@
           2578-7385</p>
         <p class="pb-2"><i class="laptop:text-2xl fa-solid fa-phone text-verdeClaroLeaf"></i> tel: (33) 3645-0696</p>
         <p class="pb-2"><i class="fa-solid fa-fax text-verdeClaroLeaf"></i> fax: (33) 3144-8289</p>
-        <p title="enviar correo a leaf spring mexico" class="duration-500 laptop:hover:pl-2"><a
-            href="mailto:leafspringmexico@gmail.com"><i class="fa-solid fa-envelope text-verdeClaroLeaf"></i>
+        <p title="enviar correo a leaf spring mexico"
+          class="duration-500 laptop:hover:pl-2 laptop:hover:text-yellow-400"><a
+            href="mailto:leafspringmexico@gmail.com"><i
+              class="duration-500 fa-solid fa-envelope text-verdeClaroLeaf"></i>
             leafspringmexico@gmail.com</a></p>
       </div>
 
@@ -321,6 +186,7 @@
 
     </footer>
 
+    <script src="js/actions.js" defer></script>
 </body>
 
 </html>
