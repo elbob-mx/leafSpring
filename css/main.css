@@ -544,6 +544,12 @@ video {
   }
 }
 
+@media (min-width: 811) {
+  .container {
+    max-width: 811;
+  }
+}
+
 @media (min-width: 976px) {
   .container {
     max-width: 976px;
@@ -704,10 +710,6 @@ video {
 
 .h-32 {
   height: 8rem;
-}
-
-.h-36 {
-  height: 9rem;
 }
 
 .h-40 {
@@ -939,6 +941,11 @@ video {
   padding-right: 3rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -947,6 +954,11 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-6 {
@@ -1286,9 +1298,38 @@ video {
 }
 
 @media (min-width: 767px) {
+  .tablet\:h-52 {
+    height: 13rem;
+  }
+
+  .tablet\:h-56 {
+    height: 14rem;
+  }
+
   .tablet\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .tablet\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .tablet\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .tablet\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 811) {
+  .bigHor\:hidden {
+    display: none;
   }
 }
 
@@ -1426,6 +1467,11 @@ video {
     padding-right: 0px;
   }
 
+  .laptop\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .laptop\:pb-0 {
     padding-bottom: 0px;
   }
@@ -1457,6 +1503,11 @@ video {
   .laptop\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .laptop\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .laptop\:text-6xl {
@@ -1527,5 +1578,67 @@ video {
   .laptop\:hover\:text-yellow-400:hover {
     --tw-text-opacity: 1;
     color: rgb(250 204 21 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1023px) {
+  .ipad\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .ipad\:h-24 {
+    height: 6rem;
+  }
+
+  .ipad\:h-36 {
+    height: 9rem;
+  }
+
+  .ipad\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .ipad\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .ipad\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .ipad\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 1365px) {
+  .hd\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .hd\:h-36 {
+    height: 9rem;
+  }
+
+  .hd\:h-40 {
+    height: 10rem;
+  }
+
+  .hd\:h-44 {
+    height: 11rem;
+  }
+
+  .hd\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .hd\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }
