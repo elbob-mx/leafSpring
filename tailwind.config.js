@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     screens: {
       small: "0px",
-      mobile: "359px",
+      mobile: "375px",
       mobileHor: "640px",
       tablet: "767px",
-      bigHor: "811",
+      bigHor: "811px",
       laptop: "976px",
       ipad: "1023px",
       hd: "1365px",
