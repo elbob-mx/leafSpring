@@ -1345,6 +1345,10 @@ video {
     display: flex;
   }
 
+  .tablet\:hidden {
+    display: none;
+  }
+
   .tablet\:h-52 {
     height: 13rem;
   }
@@ -1401,6 +1405,26 @@ video {
 @media (min-width: 811px) {
   .bigHor\:hidden {
     display: none;
+  }
+
+  .bigHor\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .bigHor\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .bigHor\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .bigHor\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1610,6 +1634,11 @@ video {
     line-height: 1.25rem;
   }
 
+  .laptop\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .laptop\:font-semibold {
     font-weight: 600;
   }
@@ -1666,6 +1695,10 @@ video {
     margin-top: 0.5rem;
   }
 
+  .ipad\:hidden {
+    display: none;
+  }
+
   .ipad\:h-24 {
     height: 6rem;
   }
@@ -1706,6 +1739,10 @@ video {
 @media (min-width: 1365px) {
   .hd\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .hd\:hidden {
+    display: none;
   }
 
   .hd\:h-36 {
