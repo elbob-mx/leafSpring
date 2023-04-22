@@ -638,6 +638,10 @@ video {
   grid-row: span 2 / span 2;
 }
 
+.row-span-1 {
+  grid-row: span 1 / span 1;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -666,6 +670,10 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .box-border {
@@ -792,6 +800,10 @@ video {
   flex-direction: column;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .content-stretch {
   align-content: stretch;
 }
@@ -814,6 +826,18 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .self-center {
@@ -847,6 +871,11 @@ video {
 .border-r-verdeLeaf {
   --tw-border-opacity: 1;
   border-right-color: rgb(2 85 65 / var(--tw-border-opacity));
+}
+
+.border-r-verdeClaroLeaf {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(2 150 115 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -1033,6 +1062,14 @@ video {
   padding-top: 1.5rem;
 }
 
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1047,6 +1084,14 @@ video {
 
 .font-roboto {
   font-family: Roboto, sans-serif;
+}
+
+.font-robotoMono {
+  font-family: Roboto Mono, monospace;
+}
+
+.font-prompt {
+  font-family: Prompt, sans-serif;
 }
 
 .text-2xl {
@@ -1093,6 +1138,11 @@ video {
   line-height: 1rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1109,6 +1159,18 @@ video {
   font-weight: 600;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1119,6 +1181,10 @@ video {
 
 .leading-relaxed {
   line-height: 1.625;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
 }
 
 .tracking-\[0\.2em\] {
@@ -1580,6 +1646,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .laptop\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .laptop\:flex-row {
     flex-direction: row;
   }
@@ -1598,6 +1668,14 @@ video {
 
   .laptop\:gap-24 {
     gap: 6rem;
+  }
+
+  .laptop\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .laptop\:gap-10 {
+    gap: 2.5rem;
   }
 
   .laptop\:self-start {
@@ -1653,6 +1731,14 @@ video {
 
   .laptop\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .laptop\:pt-6 {
+    padding-top: 1.5rem;
+  }
+
+  .laptop\:pt-5 {
+    padding-top: 1.25rem;
   }
 
   .laptop\:text-left {
