@@ -792,18 +792,6 @@ video {
   flex-direction: column;
 }
 
-.content-between {
-  align-content: space-between;
-}
-
-.content-around {
-  align-content: space-around;
-}
-
-.content-evenly {
-  align-content: space-evenly;
-}
-
 .content-stretch {
   align-content: stretch;
 }
@@ -818,10 +806,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .justify-items-center {
@@ -985,6 +969,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -998,11 +987,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .pb-10 {
@@ -1336,17 +1320,58 @@ video {
   }
 }
 
+@media (min-width: 375px) {
+  .mobile\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .mobile\:pt-4 {
+    padding-top: 1rem;
+  }
+
+  .mobile\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .mobileHor\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .mobileHor\:h-auto {
+    height: auto;
+  }
+
+  .mobileHor\:pt-4 {
+    padding-top: 1rem;
+  }
+
+  .mobileHor\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .mobileHor\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .mobileHor\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .mobileHor\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 @media (min-width: 767px) {
   .tablet\:col-span-2 {
     grid-column: span 2 / span 2;
-  }
-
-  .tablet\:flex {
-    display: flex;
-  }
-
-  .tablet\:hidden {
-    display: none;
   }
 
   .tablet\:h-52 {
@@ -1357,28 +1382,8 @@ video {
     height: 14rem;
   }
 
-  .tablet\:h-auto {
-    height: auto;
-  }
-
-  .tablet\:h-screen {
-    height: 100vh;
-  }
-
-  .tablet\:h-36 {
-    height: 9rem;
-  }
-
-  .tablet\:w-full {
-    width: 100%;
-  }
-
   .tablet\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .tablet\:flex-col {
-    flex-direction: column;
   }
 
   .tablet\:text-2xl {
@@ -1403,18 +1408,53 @@ video {
 }
 
 @media (min-width: 811px) {
-  .bigHor\:hidden {
-    display: none;
+  .bigHor\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
-  .bigHor\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .bigHor\:col-span-6 {
+    grid-column: span 6 / span 6;
   }
 
-  .bigHor\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .bigHor\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .bigHor\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .bigHor\:h-20 {
+    height: 5rem;
+  }
+
+  .bigHor\:h-36 {
+    height: 9rem;
+  }
+
+  .bigHor\:h-auto {
+    height: auto;
+  }
+
+  .bigHor\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .bigHor\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .bigHor\:pt-4 {
+    padding-top: 1rem;
+  }
+
+  .bigHor\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
+  .bigHor\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .bigHor\:text-xl {
@@ -1422,9 +1462,24 @@ video {
     line-height: 1.75rem;
   }
 
-  .bigHor\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .bigHor\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .bigHor\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .bigHor\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .bigHor\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1443,6 +1498,10 @@ video {
 
   .laptop\:ml-12 {
     margin-left: 3rem;
+  }
+
+  .laptop\:mt-0 {
+    margin-top: 0px;
   }
 
   .laptop\:block {
@@ -1695,20 +1754,12 @@ video {
     margin-top: 0.5rem;
   }
 
-  .ipad\:hidden {
-    display: none;
-  }
-
   .ipad\:h-24 {
     height: 6rem;
   }
 
   .ipad\:h-36 {
     height: 9rem;
-  }
-
-  .ipad\:h-auto {
-    height: auto;
   }
 
   .ipad\:h-screen {
@@ -1741,10 +1792,6 @@ video {
     margin-top: 0.75rem;
   }
 
-  .hd\:hidden {
-    display: none;
-  }
-
   .hd\:h-36 {
     height: 9rem;
   }
@@ -1765,5 +1812,15 @@ video {
   .hd\:text-8xl {
     font-size: 6rem;
     line-height: 1;
+  }
+
+  .hd\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .hd\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
