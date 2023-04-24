@@ -919,6 +919,21 @@ video {
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
 }
 
+.bg-sky-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+}
+
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
+.bg-violet-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(139 92 246 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1012,6 +1027,11 @@ video {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pb-2 {
@@ -1605,6 +1625,10 @@ video {
     height: 100vh;
   }
 
+  .laptop\:h-full {
+    height: 100%;
+  }
+
   .laptop\:w-32 {
     width: 8rem;
   }
@@ -1625,6 +1649,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .laptop\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .laptop\:flex-row {
     flex-direction: row;
   }
@@ -1643,6 +1671,10 @@ video {
 
   .laptop\:gap-24 {
     gap: 6rem;
+  }
+
+  .laptop\:gap-5 {
+    gap: 1.25rem;
   }
 
   .laptop\:self-start {
