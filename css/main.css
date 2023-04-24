@@ -934,6 +934,16 @@ video {
   background-color: rgb(139 92 246 / var(--tw-bg-opacity));
 }
 
+.bg-violet-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(167 139 250 / var(--tw-bg-opacity));
+}
+
+.bg-cyan-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 182 212 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1032,6 +1042,16 @@ video {
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .pb-2 {
@@ -1453,6 +1473,11 @@ video {
     padding-bottom: 4rem;
   }
 
+  .tablet\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
   .tablet\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1677,6 +1702,10 @@ video {
     gap: 1.25rem;
   }
 
+  .laptop\:gap-7 {
+    gap: 1.75rem;
+  }
+
   .laptop\:self-start {
     align-self: flex-start;
   }
@@ -1728,6 +1757,11 @@ video {
   .laptop\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .laptop\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .laptop\:pb-0 {
