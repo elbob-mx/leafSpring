@@ -863,6 +863,11 @@ video {
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
 }
 
+.bg-sky-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 189 248 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1018,10 +1023,6 @@ video {
 
 .font-roboto {
   font-family: Roboto, sans-serif;
-}
-
-.font-robotoMono {
-  font-family: Roboto Mono, monospace;
 }
 
 .text-2xl {
@@ -1190,8 +1191,23 @@ video {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.shadow-indigo-500\/100 {
+  --tw-shadow-color: rgb(99 102 241 / 1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .brightness-50 {
   --tw-brightness: brightness(.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.brightness-75 {
+  --tw-brightness: brightness(.75);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.brightness-90 {
+  --tw-brightness: brightness(.9);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1201,12 +1217,12 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
 }
 
 .ease-out {
@@ -1280,9 +1296,19 @@ video {
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
-.hover\:drop-shadow-lg:hover {
-  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+.hover\:text-cyan-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(34 211 238 / var(--tw-text-opacity));
+}
+
+.hover\:text-neutral-800:hover {
+  --tw-text-opacity: 1;
+  color: rgb(38 38 38 / var(--tw-text-opacity));
+}
+
+.hover\:shadow-indigo-500\/100:hover {
+  --tw-shadow-color: rgb(99 102 241 / 1);
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .hover\:drop-shadow-xl:hover {
@@ -1399,10 +1425,6 @@ video {
     padding-left: 2.5rem;
   }
 
-  .tablet\:pl-0 {
-    padding-left: 0px;
-  }
-
   .tablet\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1437,6 +1459,11 @@ video {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .tablet\:hover\:drop-shadow-xl:hover {
+    --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
 }
 
 @media (min-width: 811px) {
@@ -1456,24 +1483,20 @@ video {
     height: auto;
   }
 
-  .bigHor\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .bigHor\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .bigHor\:pt-4 {
-    padding-top: 1rem;
-  }
-
-  .bigHor\:pl-2 {
-    padding-left: 0.5rem;
+  .bigHor\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .bigHor\:pl-5 {
     padding-left: 1.25rem;
+  }
+
+  .bigHor\:pt-4 {
+    padding-top: 1rem;
   }
 
   .bigHor\:text-2xl {
@@ -1484,6 +1507,11 @@ video {
   .bigHor\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .bigHor\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .bigHor\:text-sm {
@@ -1499,11 +1527,6 @@ video {
   .bigHor\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .bigHor\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .bigHor\:leading-relaxed {
@@ -1626,14 +1649,6 @@ video {
 
   .laptop\:gap-24 {
     gap: 6rem;
-  }
-
-  .laptop\:gap-7 {
-    gap: 1.75rem;
-  }
-
-  .laptop\:gap-14 {
-    gap: 3.5rem;
   }
 
   .laptop\:self-start {
