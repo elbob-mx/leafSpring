@@ -868,6 +868,21 @@ video {
   background-color: rgb(56 189 248 / var(--tw-bg-opacity));
 }
 
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1707,6 +1722,16 @@ video {
   .laptop\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .laptop\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .laptop\:px-52 {
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .laptop\:pb-0 {
