@@ -5,6 +5,7 @@ module.exports = {
     screens: {
       small: "0px",
       mobile: "375px",
+      mobileHorSmall: "567px",
       mobileHor: "640px",
       tablet: "767px",
       bigHor: "811px",
