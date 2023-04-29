@@ -981,6 +981,10 @@ video {
   background-position: top;
 }
 
+.bg-right {
+  background-position: right;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1606,24 +1610,8 @@ video {
 }
 
 @media (min-width: 567px) {
-  .mobileHorSmall\:h-auto {
-    height: auto;
-  }
-
-  .mobileHorSmall\:h-screen {
-    height: 100vh;
-  }
-
   .mobileHorSmall\:h-full {
     height: 100%;
-  }
-
-  .mobileHorSmall\:w-auto {
-    width: auto;
-  }
-
-  .mobileHorSmall\:w-screen {
-    width: 100vw;
   }
 
   .mobileHorSmall\:w-full {
@@ -1777,16 +1765,8 @@ video {
     height: auto;
   }
 
-  .bigHor\:h-screen {
-    height: 100vh;
-  }
-
   .bigHor\:h-full {
     height: 100%;
-  }
-
-  .bigHor\:w-screen {
-    width: 100vw;
   }
 
   .bigHor\:w-full {
@@ -1841,6 +1821,16 @@ video {
 
   .bigHor\:leading-relaxed {
     line-height: 1.625;
+  }
+}
+
+@media (min-width: 819px) {
+  .vertIpadMini\:h-screen {
+    height: 100vh;
+  }
+
+  .vertIpadMini\:w-screen {
+    width: 100vw;
   }
 }
 

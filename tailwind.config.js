@@ -9,6 +9,7 @@ module.exports = {
       mobileHor: "640px",
       tablet: "767px",
       bigHor: "811px",
+      vertIpadMini: "819px",
       laptop: "976px",
       ipad: "1023px",
       hd: "1365px",
