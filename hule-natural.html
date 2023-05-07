@@ -83,24 +83,22 @@
   </nav>
 
   <!-- BANNER / SLOGAN -->
-  <div class="relative flex flex-col">
-    <a href="#productos"
-      class="block absolute laptop:hidden self-center justify-center p-3 tablet:text-2xl bigHor:text-base text-xl text-center duration-500 text-neonPurple hover:text-yellow-400 text-offWhite hover:translate-y-3 font-roboto z-40 laptop:bottom-[3%] bottom-[8%] font-medium tracking-wider rounded-lg">
-      <p class="tracking-widest">continuar</p>
-      <i class="fa-solid fa-chevron-down"></i>
-    </a>
-
-    <h1
-      class="absolute z-40 flex flex-col self-center ml-0 text-4xl mobile:text-5xl bigHor:text-2xl tablet:text-7xl ipad:text-5xl tracking-wider text-center uppercase laptop:self-start laptop:ml-12 laptop:text-left font-oswald laptop:text-6xl text-offWhite top-1/4">
-      Hule<br>Natural</h1>
-    <img src="./img/banner/ls-prods-main-banner.jpg" alt="banner principal leaf spring mexico"
-      class="w-screen object-cover laptop:h-[calc(50vh-144px)] h-[calc(100vh-64px)] bg-black bg-top">
-  </div>
+<div class="w-screen h-30 bg-orange-500 font-oswald text-xl laptop:text-4xl text-center py-3 font-semibold tracking-wide laptop:py-6 uppercase">hule natural</div>
 
   <!-- PRODUCTOS / MAIN -->
-   <section class="w-full h-full">
-    <embed src="./assets/pdf/sthebson/sthebson_edit.pdf" type="application/pdf" class="rounded-lg w-5/6 h-5/6"/>
+   <section class="w-full h-full bg-neutral-400 flex flex-col">
+    <div class="flex w-full h-screen bg-neutral-400">
+      <object data="./assets/pdf/sthebson/sthebson_edit.pdf" type="application/pdf" class="mx-auto laptop:pt-20 laptop:pb-10 pt-10 pb-5 w-5/6 h-full"/></object>
+    </div>
+   
+    <div class="w-full mx-auto pb-10 h-full bg-neutral-400 align-middle flex justify-center content-center">
+      <a href="./assets/pdf/sthebson/sthebson_edit.pdf" download="sthebson pdf">
+        <button type="button" class="bg-offWhite laptop:hover:drop-shadow-lg p-3 hover:bg-verdeClaroLeaf duration-500 rounded-xl text-2xl font-roboto font-bold">Descarga PDF</button>
+      </a>
+    </div>
    </section>
+
+
 
   <!-- MAPS / FOOTER -->
   <div id="resume" class="items-center justify-center w-screen h-auto align-middle text-offWhite font-roboto">
