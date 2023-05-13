@@ -83,20 +83,69 @@
   </nav>
 
   <!-- BANNER / SLOGAN -->
-<div class="w-screen h-30 bg-orange-500 font-oswald text-xl laptop:text-4xl text-center py-3 font-semibold tracking-wide laptop:py-6 uppercase">hule natural</div>
+<div class="w-screen py-3 text-xl font-semibold tracking-wide text-center uppercase bg-orange-500 h-30 font-oswald laptop:text-4xl laptop:py-6">hule natural</div>
 
   <!-- PRODUCTOS / MAIN -->
-   <section class="w-full h-full bg-neutral-400 flex flex-col">
+   <section class="flex flex-col w-full h-full bg-neutral-400">
     <div class="flex w-full h-screen bg-neutral-400">
-      <object data="./assets/pdf/sthebson/sthebson_edit.pdf" type="application/pdf" class="mx-auto laptop:pt-20 laptop:pb-10 pt-10 pb-5 w-5/6 h-full"/></object>
+      <object data="./assets/pdf/sthebson/sthebson_edit.pdf" type="application/pdf" class="w-10/12 h-full pt-10 pb-5 mx-auto laptop:pt-20 laptop:pb-10"/></object>
     </div>
    
-    <div class="w-full mx-auto pb-10 h-full bg-neutral-400 align-middle flex justify-center content-center">
+    <div class="flex content-center justify-center w-full h-full pb-10 mx-auto align-middle bg-neutral-400">
       <a href="./assets/pdf/sthebson/sthebson_edit.pdf" download="sthebson pdf">
-        <button type="button" class="bg-offWhite laptop:hover:drop-shadow-lg p-3 hover:bg-verdeClaroLeaf duration-500 rounded-xl text-2xl font-roboto font-bold">Descarga PDF</button>
+        <button type="button" class="px-6 py-3 text-2xl font-semibold tracking-wide duration-500 bg-offWhite laptop:hover:drop-shadow-lg hover:bg-verdeClaroLeaf rounded-xl font-roboto hover:text-offWhite"><i class="fa-solid fa-download fa-bounce" style="color: #000000;"></i></i> Descargar PDF</button>
       </a>
     </div>
-   </section>
+
+    <!-- DESTACADOS HULE NATURAL -->
+    <div class="grid items-center w-auto grid-cols-2 py-20 mx-auto laptop:flex laptop:flex-row gap-14">
+    <div
+    class="items-center justify-center col-span-2 px-6 py-3 mx-5 text-center rounded-lg laptop:px-0 laptop:py-0 laptop:w-32 bg-grisLeaf laptop:bg-transparent laptop:text-left justify-items-center">
+    <p
+      class="text-3xl font-semibold tracking-wide text-offWhite bigHor:text-2xl mobileHor:text-2xl font-roboto laptop:text-black tablet:text-4xl laptop:text-3xl">
+      Destacados Hule Natural
+    </p>
+  </div>
+
+
+  <button tabindex="-1">
+    <a target="_self"
+      href="https://articulo.mercadolibre.com.mx/MLM-779314542-granada-kenworth-air-glide-836940-rotula-2-34-4-piezas-_JM"
+      accesskey="s" tabindex="0">
+      <img src="./img/destacados-ml/aumento-tacon-lobo.webp"
+        class="h-32 duration-500 rounded-lg hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
+        alt="aumento tacon lobo" title="aumento tacon lobo"></a>
+        <p class="pt-4 text-lg font-semibold text-center font-oswald w-28">Granada Kenworth Air Glide 836940 Rotula 2-3/4</p>
+  </button>
+
+  <button tabindex="-1">
+    <a target="_self"
+      href="https://articulo.mercadolibre.com.mx/MLM-773023487-banderin-banderola-senalamiento-defensa-_JM"
+      accesskey="s" tabindex="0">
+      <img src="./img/destacados-ml/aumento-tacon-lobo.webp"
+        class="h-32 duration-500 rounded-lg hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
+        alt="aumento tacon lobo" title="aumento tacon lobo"></a>
+  </button>
+
+  <button tabindex="-1">
+    <a target="_self"
+      href="https://articulo.mercadolibre.com.mx/MLM-773023487-banderin-banderola-senalamiento-defensa-_JM"
+      accesskey="s" tabindex="0">
+      <img src="./img/destacados-ml/aumento-tacon-lobo.webp"
+        class="h-32 duration-500 rounded-lg hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
+        alt="aumento tacon lobo" title="aumento tacon lobo"></a>
+  </button>
+
+  <button tabindex="-1">
+    <a target="_self"
+      href="https://articulo.mercadolibre.com.mx/MLM-773023487-banderin-banderola-senalamiento-defensa-_JM"
+      accesskey="s" tabindex="0">
+      <img src="./img/destacados-ml/aumento-tacon-lobo.webp"
+        class="h-32 duration-500 rounded-lg hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
+        alt="aumento tacon lobo" title="aumento tacon lobo"></a>
+  </button>
+  </div>
+</section>
 
 
 
@@ -105,7 +154,7 @@
 
     <!-- FOOTER -->
     <footer id="footer"
-      class="grid items-center w-screen content-stretch h-full grid-cols-1 p-10 laptop:text-2xl tablet:grid-cols-2 laptop:grid-cols-2 laptop:h-auto bg-grisLeaf">
+      class="grid items-center w-screen h-full grid-cols-1 p-10 content-stretch laptop:text-2xl tablet:grid-cols-2 laptop:grid-cols-2 laptop:h-auto bg-grisLeaf">
 
       <div class="pb-6 laptop:pb-0 rounded-xl">
         <a href="#inicio">
@@ -144,6 +193,8 @@
       <h6
         class="col-span-1 text-xs tracking-wide text-center laptop:text-sm small:pt-8 tablet:col-span-2 laptop:py-2 text-zinc-400 laptop:col-span-2 font-roboto">
         Copyright© 2023 Leaf Spring México. Todos los derechos reservados.</h6>
+        <h6
+        class="col-span-1 text-xs tracking-wide text-center laptop:text-sm small:pt-8 tablet:col-span-2 laptop:py-2 text-zinc-400 laptop:col-span-2 font-roboto"><a href="https://elbob-mx.github.io/portfolio-rrgo/">Desarrollado por: <span class="font-semibold text-neonBlue"><i class="fa-solid fa-hand-peace" style="color: #4ae7d9;"></i class> rrgo design</span></a></h6>
     </footer>
 
     <script src="js/actions.js"></script>
