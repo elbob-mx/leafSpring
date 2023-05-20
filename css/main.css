@@ -321,7 +321,7 @@ hr,
 figure,
 p,
 pre {
-  /* margin: 0; */
+  margin: 0;
 }
 
 fieldset {
@@ -598,6 +598,10 @@ video {
   grid-row: span 2 / span 2;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -616,6 +620,11 @@ video {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .mb-2 {
@@ -738,6 +747,10 @@ video {
   width: 83.333333%;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .w-4\/6 {
   width: 66.666667%;
 }
@@ -746,20 +759,16 @@ video {
   width: 83.333333%;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-screen {
   width: 100vw;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-28 {
-  width: 7rem;
 }
 
 .flex-grow {
@@ -863,16 +872,12 @@ video {
   justify-items: center;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
 .gap-14 {
   gap: 3.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .self-center {
@@ -1025,9 +1030,24 @@ video {
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
 }
 
-.bg-slate-200 {
+.bg-orange-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 115 115 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1146,11 +1166,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1256,6 +1271,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1269,11 +1289,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1336,10 +1351,6 @@ video {
   letter-spacing: 0.1em;
 }
 
-.-tracking-wide {
-  letter-spacing: -0.025em;
-}
-
 .text-\[\#075E54\] {
   --tw-text-opacity: 1;
   color: rgb(7 94 84 / var(--tw-text-opacity));
@@ -1378,6 +1389,11 @@ video {
 .text-grisLeaf {
   --tw-text-opacity: 1;
   color: rgb(76 76 76 / var(--tw-text-opacity));
+}
+
+.text-neonBlue {
+  --tw-text-opacity: 1;
+  color: rgb(74 231 217 / var(--tw-text-opacity));
 }
 
 .text-neutral-100 {
@@ -1435,14 +1451,19 @@ video {
   color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
-.text-neonBlue {
+.text-orange-100 {
   --tw-text-opacity: 1;
-  color: rgb(74 231 217 / var(--tw-text-opacity));
+  color: rgb(255 237 213 / var(--tw-text-opacity));
 }
 
-.text-zinc-600 {
+.text-neutral-900 {
   --tw-text-opacity: 1;
-  color: rgb(82 82 91 / var(--tw-text-opacity));
+  color: rgb(23 23 23 / var(--tw-text-opacity));
+}
+
+.text-neutral-800 {
+  --tw-text-opacity: 1;
+  color: rgb(38 38 38 / var(--tw-text-opacity));
 }
 
 .antialiased {
@@ -1576,11 +1597,6 @@ video {
 .hover\:text-yellow-400:hover {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
-}
-
-.hover\:text-neonBlue:hover {
-  --tw-text-opacity: 1;
-  color: rgb(74 231 217 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-indigo-500\/100:hover {
@@ -2268,6 +2284,11 @@ video {
     letter-spacing: 0.025em;
   }
 
+  .laptop\:text-black {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+
   .laptop\:text-grisLeaf {
     --tw-text-opacity: 1;
     color: rgb(76 76 76 / var(--tw-text-opacity));
@@ -2281,16 +2302,6 @@ video {
   .laptop\:text-zinc-500 {
     --tw-text-opacity: 1;
     color: rgb(113 113 122 / var(--tw-text-opacity));
-  }
-
-  .laptop\:text-offWhite {
-    --tw-text-opacity: 1;
-    color: rgb(242 242 242 / var(--tw-text-opacity));
-  }
-
-  .laptop\:text-black {
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
   }
 
   .laptop\:transition-all {
@@ -2418,15 +2429,5 @@ video {
   .hd\:text-8xl {
     font-size: 6rem;
     line-height: 1;
-  }
-
-  .hd\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .hd\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }
