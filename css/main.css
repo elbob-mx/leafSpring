@@ -2329,6 +2329,16 @@ video {
     color: rgb(242 242 242 / var(--tw-text-opacity));
   }
 
+  .laptop\:text-orange-500 {
+    --tw-text-opacity: 1;
+    color: rgb(249 115 22 / var(--tw-text-opacity));
+  }
+
+  .laptop\:text-orange-800 {
+    --tw-text-opacity: 1;
+    color: rgb(154 52 18 / var(--tw-text-opacity));
+  }
+
   .laptop\:transition-all {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2426,6 +2436,14 @@ video {
 
   .hd\:h-44 {
     height: 11rem;
+  }
+
+  .hd\:h-56 {
+    height: 14rem;
+  }
+
+  .hd\:h-screen {
+    height: 100vh;
   }
 
   .hd\:px-40 {
