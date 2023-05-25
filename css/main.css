@@ -662,6 +662,14 @@ video {
   margin-top: 1.5rem;
 }
 
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1074,6 +1082,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1132,6 +1144,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-10 {
@@ -1911,6 +1928,10 @@ video {
     padding-top: 1rem;
   }
 
+  .bigHor\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
   .bigHor\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1984,6 +2005,14 @@ video {
 
   .laptop\:mt-0 {
     margin-top: 0px;
+  }
+
+  .laptop\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .laptop\:ml-10 {
+    margin-left: 2.5rem;
   }
 
   .laptop\:block {
@@ -2062,8 +2091,16 @@ video {
     list-style-type: none;
   }
 
+  .laptop\:grid-flow-row {
+    grid-auto-flow: row;
+  }
+
   .laptop\:grid-flow-col {
     grid-auto-flow: column;
+  }
+
+  .laptop\:grid-flow-row-dense {
+    grid-auto-flow: row dense;
   }
 
   .laptop\:grid-cols-2 {
@@ -2076,6 +2113,18 @@ video {
 
   .laptop\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .laptop\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .laptop\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .laptop\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 
   .laptop\:flex-row {
@@ -2188,6 +2237,10 @@ video {
 
   .laptop\:pt-0 {
     padding-top: 0px;
+  }
+
+  .laptop\:pr-10 {
+    padding-right: 2.5rem;
   }
 
   .laptop\:text-left {
