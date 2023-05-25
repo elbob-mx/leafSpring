@@ -598,10 +598,6 @@ video {
   grid-row: span 2 / span 2;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -620,11 +616,6 @@ video {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
 }
 
 .mb-2 {
@@ -705,14 +696,6 @@ video {
 
 .h-2\/5 {
   height: 40%;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-28 {
-  height: 7rem;
 }
 
 .h-32 {
@@ -996,6 +979,11 @@ video {
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -1028,31 +1016,6 @@ video {
 .bg-zinc-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
-}
-
-.bg-orange-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
-}
-
-.bg-neutral-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(115 115 115 / var(--tw-bg-opacity));
-}
-
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
-.bg-neutral-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1225,6 +1188,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-center {
@@ -1421,6 +1388,11 @@ video {
   color: rgb(64 64 64 / var(--tw-text-opacity));
 }
 
+.text-neutral-900 {
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity));
+}
+
 .text-offWhite {
   --tw-text-opacity: 1;
   color: rgb(242 242 242 / var(--tw-text-opacity));
@@ -1456,19 +1428,9 @@ video {
   color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
-.text-orange-100 {
+.text-neutral-400 {
   --tw-text-opacity: 1;
-  color: rgb(255 237 213 / var(--tw-text-opacity));
-}
-
-.text-neutral-900 {
-  --tw-text-opacity: 1;
-  color: rgb(23 23 23 / var(--tw-text-opacity));
-}
-
-.text-neutral-800 {
-  --tw-text-opacity: 1;
-  color: rgb(38 38 38 / var(--tw-text-opacity));
+  color: rgb(163 163 163 / var(--tw-text-opacity));
 }
 
 .antialiased {
@@ -2224,6 +2186,10 @@ video {
     padding-top: 5rem;
   }
 
+  .laptop\:pt-0 {
+    padding-top: 0px;
+  }
+
   .laptop\:text-left {
     text-align: left;
   }
@@ -2289,14 +2255,19 @@ video {
     letter-spacing: 0.025em;
   }
 
-  .laptop\:text-black {
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
-  }
-
   .laptop\:text-grisLeaf {
     --tw-text-opacity: 1;
     color: rgb(76 76 76 / var(--tw-text-opacity));
+  }
+
+  .laptop\:text-orange-800 {
+    --tw-text-opacity: 1;
+    color: rgb(154 52 18 / var(--tw-text-opacity));
+  }
+
+  .laptop\:text-slate-800 {
+    --tw-text-opacity: 1;
+    color: rgb(30 41 59 / var(--tw-text-opacity));
   }
 
   .laptop\:text-verdeLeaf {
@@ -2307,36 +2278,6 @@ video {
   .laptop\:text-zinc-500 {
     --tw-text-opacity: 1;
     color: rgb(113 113 122 / var(--tw-text-opacity));
-  }
-
-  .laptop\:text-verdeClaroLeaf {
-    --tw-text-opacity: 1;
-    color: rgb(2 150 115 / var(--tw-text-opacity));
-  }
-
-  .laptop\:text-slate-700 {
-    --tw-text-opacity: 1;
-    color: rgb(51 65 85 / var(--tw-text-opacity));
-  }
-
-  .laptop\:text-slate-800 {
-    --tw-text-opacity: 1;
-    color: rgb(30 41 59 / var(--tw-text-opacity));
-  }
-
-  .laptop\:text-offWhite {
-    --tw-text-opacity: 1;
-    color: rgb(242 242 242 / var(--tw-text-opacity));
-  }
-
-  .laptop\:text-orange-500 {
-    --tw-text-opacity: 1;
-    color: rgb(249 115 22 / var(--tw-text-opacity));
-  }
-
-  .laptop\:text-orange-800 {
-    --tw-text-opacity: 1;
-    color: rgb(154 52 18 / var(--tw-text-opacity));
   }
 
   .laptop\:transition-all {
@@ -2426,10 +2367,6 @@ video {
     margin-top: 0.75rem;
   }
 
-  .hd\:h-36 {
-    height: 9rem;
-  }
-
   .hd\:h-40 {
     height: 10rem;
   }
@@ -2440,10 +2377,6 @@ video {
 
   .hd\:h-56 {
     height: 14rem;
-  }
-
-  .hd\:h-screen {
-    height: 100vh;
   }
 
   .hd\:px-40 {
