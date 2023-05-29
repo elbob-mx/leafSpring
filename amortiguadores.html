@@ -2,276 +2,213 @@
 <html lang="es-MX" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
-    <title>Leaf Spring México | Amortiguadores</title>
-    <link rel="shortcut icon" href="img/icons/faviconLeafw.png" type="image/x-icon" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://kit.fontawesome.com/9846627988.js" crossorigin="anonymous"></script>
+  <title>Leaf Spring México | Amortiguadores</title>
+  <link rel="shortcut icon" href="img/icons/faviconLeafw.png" type="image/x-icon" />
 </head>
 
-<body class="flex flex-col w-full overflow-x-hidden antialiased bg-offWhite text-grisLeaf" tabindex="-1">
+<body class="flex flex-col w-full overflow-x-hidden antialiased bg-offWhite" tabindex="-1">
 
-    <!-- MAIN MENU -->
-    <div id="ham"
-        class="fixed z-50 flex flex-col items-center justify-center hidden w-screen h-screen overflow-x-hidden overflow-y-hidden text-4xl tracking-wide duration-500 origin-left bg-verdeLeaf text-offWhite laptop:hidden">
+  <!-- MAIN MENU -->
+  <div id="ham"
+    class="fixed z-50 flex flex-col items-center justify-center hidden w-screen h-screen overflow-x-hidden overflow-y-hidden text-4xl tracking-wide duration-500 origin-left bg-verdeLeaf text-offWhite laptop:hidden">
 
-        <ul class="font-roboto">
-            <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="index.html">Inicio</a></li>
-            <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a
-                    href="productos.html">Productos</a></li>
-            <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="contacto.html">Contacto</a>
-            </li>
-        </ul> <!-- BOTON CERRAR -->
-        <div id="closeBtn" class="absolute text-3xl cursor-pointer top-9 right-5">
-            <i name="cerrar" onclick="Close(this)" class="fa-solid fa-xmark text-offWhite"></i>
-        </div>
+    <ul class="font-roboto">
+      <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="index.html">Inicio</a></li>
+      <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="nosotros.html">Nosotros</a></li>
+      <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="productos.html">Productos</a></li>
+      <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="contacto.html">Contacto</a></li>
+    </ul> <!-- BOTON CERRAR -->
+    <div id="closeBtn" class="absolute text-3xl cursor-pointer top-9 right-5">
+      <i name="cerrar" onclick="Close(this)" class="fa-solid fa-xmark text-offWhite"></i>
     </div>
-
-    <!-- NAVBAR -->
-    <nav id="inicio"
-        class="top-0 z-40 flex flex-row self-center w-screen p-3 laptop:items-center laptop:justify-around laptop:p-6 laptop:w-screen bg-zinc-100">
-        <div class="flex flex-row items-center justify-between flex-grow mx-auto align-middle laptop:justify-around">
-            <a href="index.html">
-                <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring"
-                    class="h-16 pl-2 laptop:pl-0 laptop:h-24">
-            </a>
-
-            <!-- HAMBURGER MENU MOBILE -->
-            <div>
-                <!-- HAMBURGER MENU ICON -->
-                <div id="hamBtn"
-                    class="fixed flex flex-row p-2 text-4xl align-middle rounded-md cursor-pointer laptop:hidden right-3 top-6 bg-zinc-200">
-                    <img onclick="Open(this)" src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu"
-                        title="hamburger menu" class="h-6 duration-500 laptop:hidden">
-                </div>
+  </div>
 
 
-                <!-- MENU -->
-                <ul class="hidden laptop:flex-row laptop:gap-24 laptop:list-none laptop:flex">
+  <!-- NAVBAR -->
+  <nav id="inicio"
+    class="top-0 z-40 flex flex-row self-center w-screen p-3 laptop:items-center laptop:justify-around laptop:p-6 laptop:w-screen bg-zinc-100">
+    <div class="flex flex-row items-center justify-between flex-grow mx-auto align-middle laptop:justify-around">
+      <a href="index.html">
+        <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring" class="h-16 pl-2 laptop:pl-0 laptop:h-24">
+      </a>
 
-                    <li class="items-center">
-                        <a href="index.html"
-                            class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
-                                class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">inicio</span></a>
-                    </li>
-
-                    <li class="items-center">
-                        <a href="nosotros.html"
-                            class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
-                                class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">nosotros</span></a>
-                    </li>
-
-                    <li class="items-center">
-                        <a href="productos.html"
-                            class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
-                                class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">productos</span></a>
-                    </li>
-
-                    <li class="items-center">
-                        <a href="contacto.html"
-                            class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
-                                class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out hover:text-verdeClaroLeaf">contacto</span></a>
-                    </li>
-                </ul>
-            </div>
-    </nav>
-
-    <!-- BANNER / SLOGAN -->
-    <div class="relative flex flex-col">
-        <a href="#prods"
-            class="block absolute laptop:hidden self-center justify-center p-3 tablet:text-2xl bigHor:text-base text-xl text-center duration-500 text-neonPurple hover:text-yellow-400 text-offWhite hover:translate-y-3 font-roboto z-40 laptop:bottom-[3%] bottom-[8%] font-medium tracking-wider rounded-lg">
-            <p class="tracking-widest">continuar</p>
-            <i class="fa-solid fa-chevron-down"></i>
-        </a>
-        <h1
-            class="absolute z-40 flex flex-col self-center ml-0 text-4xl tracking-wider text-center uppercase tablet:text-8xl laptop:self-start laptop:ml-12 bigHor:text-5xl laptop:text-left font-oswald mobileHor:text-2xl laptop:block laptop:text-8xl ipad:text-7xl hd:text-8xl text-offWhite top-1/4">
-            Amortiguadores</h1>
-        <img src="./img/banner/ls-nosotros-main-banner.jpg" alt="banner principal leaf spring mexico"
-            class="w-screen object-cover laptop:h-[calc(50vh-144px)] h-[calc(100vh-64px)] bg-right bg-black">
-    </div>
-
-    <!-- AMORTIGUADORES / MAIN -->
-
-    <div class="">
-        <div class="mt-10">
-            <h1 class="text-center font-oswald text-5xl text-verdeLeaf">Amortiguadores</h1>
-            <h4 class="text-center font-robotoMono mt-2 font-semibold text-neutral-500 px-6">Lorem ipsum dolor sit amet consectetur</h4>
+      <!-- HAMBURGER MENU MOBILE -->
+      <div>
+        <!-- HAMBURGER MENU ICON -->
+        <div id="hamBtn"
+          class="fixed flex flex-row p-2 text-4xl align-middle rounded-md cursor-pointer laptop:hidden right-3 top-6 bg-zinc-200">
+          <img onclick="Open(this)" src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu"
+            title="hamburger menu" class="h-6 duration-500 laptop:hidden">
         </div>
 
-        <!-- TABLA AMORT HIDRAULICOS-->
-        <section id="prods" class="grid w-screen h-auto grid-flow-row grid-cols-1 col-span-1 gap-5 px-6 laptop:px-20  bigHor:grid-cols-2 bg-offWhite pt-14 pb-6 laptop:gap-10 laptop:grid-cols-4">
 
-            <div class="col-span-1">
-            <h4 class="col-span-1 text-3xl text-neutral-700 font-oswald">/ Amortiguadores Hidráulicos</h4>
-                <p class="font-robotoMono mt-2 text-sm laptop:text-base text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate nam accusantium doloribus quae ducimus autem, eveniet quaerat dolor ab?</p>
-            </div>
+        <!-- MENU -->
+        <ul class="hidden laptop:flex-row laptop:gap-24 laptop:list-none laptop:flex">
 
+          <li class="items-center">
+            <a href="index.html"
+              class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
+                class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize hover:text-verdeClaroLeaf">inicio</span></a>
+          </li>
 
-            <table class="border-collapse border border-slate-500 col-span-1 laptop:col-span-3 font-robotoMono">
-                <thead>
-                    <tr>
-                        <th class="border-2 bg-slate-300 border-slate-600">Lorem</th>
-                        <th class="border-2 bg-slate-300 border-slate-600">Ipsum</th>
-                        <th class="border-2 bg-slate-300 border-slate-600">Lorem</th>
-                        <th class="border-2 bg-slate-300 border-slate-600">Ipsum</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                    </tr>
-                </tbody>
-            </table>
+          <li class="items-center">
+            <a href="nosotros.html"
+              class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
+                class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize hover:text-verdeClaroLeaf">nosotros</span></a>
+          </li>
 
-        </section>
+          <li class="items-center">
+            <a href="productos.html"
+              class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
+                class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize hover:text-verdeClaroLeaf">productos</span></a>
+          </li>
 
-        <!-- TABLA AMORT GAS-->
-        <section id="prods" class="grid w-screen h-auto grid-flow-row grid-cols-1 col-span-1 gap-5 px-6 laptop:px-20  bigHor:grid-cols-2 bg-offWhite pt-14 pb-6 laptop:gap-10 laptop:grid-cols-4">
+          <li class="items-center">
+            <a href="contacto.html"
+              class="hidden laptop:flex laptop:flex-row laptop:text-2xl laptop:font-semibold laptop:tracking-wide laptop:transition-all laptop:duration-500 laptop:ease-in-out laptop:font-roboto laptop:text-zinc-500 group"><span
+                class="bg-left-bottom bg-gradient-to-r from-verdeClaroLeaf pl-0 pr-4 py-1 to-verdeLeaf bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize hover:text-verdeClaroLeaf">contacto</span></a>
+          </li>
+        </ul>
+      </div>
+  </nav>
 
-            <div class="col-span-1">
-            <h4 class="col-span-1 text-3xl text-neutral-700 font-oswald">/ Amortiguadores de Gas</h4>
-                <p class="font-robotoMono mt-2 text-sm laptop:text-base text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptate nam accusantium doloribus quae ducimus autem, eveniet quaerat dolor ab?</p>
-            </div>
+  <!-- BANNER / SLOGAN -->
+  <div
+    class="w-screen py-3 text-xl font-semibold text-offWhite tracking-wide text-center uppercase bg-green-700 h-30 font-roboto laptop:text-4xl laptop:py-6">
+    Amortiguadores</div>
 
-
-            <table class="border-collapse border border-slate-500 col-span-1 laptop:col-span-3 font-robotoMono">
-                <thead>
-                    <tr>
-                        <th class="border border-slate-600">Lorem</th>
-                        <th class="border border-slate-600">Ipsum</th>
-                        <th class="border border-slate-600">Lorem</th>
-                        <th class="border border-slate-600">Ipsum</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                        <td class="border border-slate-700">Lorem</td>
-                        <td class="border border-slate-700">Ipsum</td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </section>
+  <!-- PRODUCTOS / MAIN -->
+  <section class="flex flex-col w-full h-full bg-neutral-400">
+    <div class="flex w-full h-screen bg-neutral-400">
+      <object data="./assets/pdf/gabriel/gabriel-amortiguadores.pdf" type="application/pdf"
+        class="w-10/12 h-full pt-10 pb-5 mx-auto laptop:pt-20 laptop:pb-10"></object>
     </div>
 
-    <!-- MAPS / FOOTER -->
-    <div id="resume"
-        class="items-center justify-center w-screen h-screen align-middle bg-black text-offWhite font-roboto">
+    <div class="flex content-center justify-center w-full h-full pb-10 mx-auto align-middle bg-neutral-400">
+      <a href="./assets/pdf/gabriel/gabriel-amortiguadores.pdf" download="sthebson pdf">
+        <button type="button"
+          class="px-6 py-3 text-2xl font-semibold tracking-wide duration-500 bg-offWhite laptop:hover:drop-shadow-lg hover:bg-verdeClaroLeaf rounded-xl font-roboto hover:text-offWhite"><i
+            class="fa-solid fa-download fa-bounce" style="color: #000000;"></i></i> Descargar PDF</button>
+      </a>
+    </div>
 
-        <!-- FOOTER -->
-        <footer id="footer"
-            class="grid items-center w-screen content-stretch h-full grid-cols-1 p-10 laptop:text-2xl tablet:grid-cols-2 laptop:grid-cols-2 laptop:h-auto bg-grisLeaf">
+   <!-- DESTACADOS HULE NATURAL -->
+   <div class="grid items-center w-auto grid-cols-2 py-20 mx-auto laptop:flex laptop:flex-row gap-14">
+    <div
+      class="items-center justify-center col-span-2 px-6 py-3 mx-5 text-center rounded-lg laptop:px-0 laptop:py-0 laptop:w-32 bg-grisLeaf laptop:bg-transparent laptop:text-left justify-items-center">
+      <p
+        class="text-3xl font-semibold tracking-wide text-offWhite bigHor:text-2xl mobileHor:text-2xl font-roboto laptop:text-orange-800 tablet:text-4xl laptop:text-3xl">
+        Destacados Hule Natural
+      </p>
+    </div>
 
-            <div class="pb-6 laptop:pb-0">
-                <a href="#inicio">
-                    <img class="h-16 pb-6 laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
-                        alt="logo leaf spring mexico"></a>
-                <ul>
-                    <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
-                            href="inicio.html">inicio</a></li>
 
-                    <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
-                            href="nosotros.html">nosotros</a></li>
+    <button tabindex="-1">
+      <a target="_self"
+        href="https://articulo.mercadolibre.com.mx/MLM-779314542-granada-kenworth-air-glide-836940-rotula-2-34-4-piezas-_JM"
+        accesskey="s" tabindex="0">
+        <img src="./img/destacados-ml/dest-granada-836940.jpg"
+          class="h-32 duration-500 rounded-lg hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
+          alt="granada rotula 836940 kenworth" title="granada rotula 836940 kenworth"></a>
+      <p class="pt-4 text-lg font-semibold text-center font-oswald w-28 mx-auto">Granada Kenworth Air Glide 836940 Rotula 2-3/4</p>
+    </button>
 
-                    <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
-                            href="productos.html">productos</a></li>
+    <button tabindex="-1">
+      <a target="_self"
+        href="https://articulo.mercadolibre.com.mx/MLM-784817905-granada-freightliner-cceja-corcholata-2-12-2-piezas-_JM"
+        accesskey="s" tabindex="0">
+        <img src="./img/destacados-ml/dest-granada-corcholata.jpg"
+          class="h-32 duration-500 rounded-lg hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
+          alt="granada freightliner corcholata" title="granada freightliner corcholata"></a>
+      <p class="pt-4 text-lg font-semibold text-center font-oswald w-28 mx-auto">Granada Freightliner Corcholata 2-1/2</p>
+    </button>
 
-                    <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-amber-400"
-                            href="https://leafspringmexico.mercadoshops.com.mx/">mercadoshop</a></li>
+    <button tabindex="-1">
+      <a target="_self"
+        href="https://articulo.mercadolibre.com.mx/MLM-922041158-soporte-muelle-freightliner-airtek-58918-60961002-_JM"
+        accesskey="s" tabindex="0">
+        <img src="./img/destacados-ml/dest-airtek-58918.jpg"
+          class="h-32 duration-500 rounded-lg hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
+          alt="soporte muelle freightliner airtek 58918" title="soporte muelle freightliner airtek 58918"></a>
+      <p class="pt-4 text-lg font-semibold text-center font-oswald w-28 mx-auto">Soporte Muelle Freightliner Airtek 58918 60961002</p>
+    </button>
 
-                    <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
-                            href="contacto.html">contacto</a></li>
-                </ul>
-            </div>
+    <button tabindex="-1">
+      <a target="_self"
+        href="https://articulo.mercadolibre.com.mx/MLM-909281595-granada-nucleo-tensor-freightliner-2-oem447691-4-piezas-_JM"
+        accesskey="s" tabindex="0">
+        <img src="./img/destacados-ml/dest-granada-447691.jpg"
+          class="h-32 duration-500 rounded-lg hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
+          alt="granada freightliner 2 447691" title="granada freightliner 2 447691"></a>
+      <p class="pt-4 text-lg font-semibold text-center font-oswald w-28 mx-auto">Granada-nucleo Tensor Freightliner 2 OEM:447691</p>
+    </button>
+  </div>
+  </section>
 
-            <div>
-                <p class="pb-2"><i class="text-base laptop:text-2xl fa-brands fa-whatsapp text-verdeClaroLeaf"></i> :
-                    (33)
-                    2578-7385</p>
-                <p class="pb-2"><i class="laptop:text-2xl fa-solid fa-phone text-verdeClaroLeaf"></i> tel: (33)
-                    3645-0696</p>
-                <p class="pb-2"><i class="fa-solid fa-fax text-verdeClaroLeaf"></i> fax: (33) 3144-8289</p>
-                <p title="enviar correo a leaf spring mexico"
-                    class="duration-500 laptop:hover:pl-2 laptop:hover:text-yellow-400"><a
-                        href="mailto:leafspringmexico@gmail.com"><i
-                            class="duration-500 fa-solid fa-envelope text-verdeClaroLeaf"></i>
-                        leafspringmexico@gmail.com</a></p>
-            </div>
 
-            <h6
-                class="col-span-1 text-xs tracking-wide text-center laptop:text-sm small:pt-8 tablet:col-span-2 laptop:py-2 text-zinc-400 laptop:col-span-2 font-roboto">
-                Copyright© 2023 Leaf Spring México. Todos los derechos reservados.</h6>
-                <h6
-                class="col-span-1 text-xs tracking-wide text-center laptop:text-sm small:pt-8 tablet:col-span-2 laptop:py-2 text-zinc-400 laptop:col-span-2 font-roboto">
-                <a href="https://elbob-mx.github.io/portfolio-rrgo/">Desarrollado por: <span
-                    class="font-semibold text-neonBlue"><i class="fa-solid fa-hand-peace" style="color: #4ae7d9;"></i class>
-                    rrgo design</span></a></h6>
-        </footer>
 
-        <script src="js/actions.js"></script>
-        <script src="js/dropdown.js"></script>
+  <!-- MAPS / FOOTER -->
+  <div id="resume" class="items-center justify-center w-screen h-auto align-middle text-offWhite font-roboto">
+
+    <!-- FOOTER -->
+    <footer id="footer"
+      class="grid items-center w-screen h-full grid-cols-1 p-10 content-stretch laptop:text-2xl tablet:grid-cols-2 laptop:grid-cols-2 laptop:h-auto bg-grisLeaf">
+
+      <div class="pb-6 laptop:pb-0 rounded-xl">
+        <a href="#inicio">
+          <img class="h-16 pb-6 laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
+            alt="logo leaf spring mexico"></a>
+        <ul>
+          <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
+              href="inicio.html">inicio</a></li>
+
+          <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
+              href="nosotros.html">nosotros</a></li>
+
+          <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
+              href="productos.html">productos</a></li>
+
+          <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-amber-400"
+              href="https://leafspringmexico.mercadoshops.com.mx/">mercadoshop</a></li>
+
+          <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
+              href="contacto.html">contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="pb-2"><i class="text-base laptop:text-2xl fa-brands fa-whatsapp text-verdeClaroLeaf"></i> : (33)
+          2578-7385</p>
+        <p class="pb-2"><i class="laptop:text-2xl fa-solid fa-phone text-verdeClaroLeaf"></i> tel: (33) 3645-0696</p>
+        <p class="pb-2"><i class="fa-solid fa-fax text-verdeClaroLeaf"></i> fax: (33) 3144-8289</p>
+        <p title="enviar correo a leaf spring mexico"
+          class="duration-500 laptop:hover:pl-2 laptop:hover:text-yellow-400"><a
+            href="mailto:leafspringmexico@gmail.com"><i
+              class="duration-500 fa-solid fa-envelope text-verdeClaroLeaf"></i>
+            leafspringmexico@gmail.com</a></p>
+      </div>
+
+      <h6
+        class="col-span-1 text-xs tracking-wide text-center laptop:text-sm small:pt-8 tablet:col-span-2 laptop:py-2 text-zinc-400 laptop:col-span-2 font-roboto">
+        Copyright© 2023 Leaf Spring México. Todos los derechos reservados.</h6>
+      <h6
+        class="col-span-1 text-xs tracking-wide text-center laptop:text-sm small:pt-8 tablet:col-span-2 laptop:py-2 text-zinc-400 laptop:col-span-2 font-roboto">
+        <a href="https://elbob-mx.github.io/portfolio-rrgo/">Desarrollado por: <span
+            class="font-semibold text-neonBlue"><i class="fa-solid fa-hand-peace" style="color: #4ae7d9;"></i class>
+            rrgo design</span></a></h6>
+    </footer>
+
+    <script src="js/actions.js"></script>
 </body>
 
 </html>
