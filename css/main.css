@@ -566,6 +566,22 @@ video {
   top: 2.25rem;
 }
 
+.top-\[30\%\] {
+  top: 30%;
+}
+
+.top-\[37\%\] {
+  top: 37%;
+}
+
+.top-\[27\%\] {
+  top: 27%;
+}
+
+.top-\[25\%\] {
+  top: 25%;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -2258,6 +2274,11 @@ video {
   .ipad\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .ipad\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }
 
