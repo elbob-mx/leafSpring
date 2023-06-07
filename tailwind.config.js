@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: ["./*.html",
+  "./node_modules/flowbite/**/*.js"],
   theme: {
     screens: {
       small: "0px",
@@ -28,9 +29,12 @@ module.exports = {
         grisLeaf: '#4C4C4C',
         offWhite: '#F2F2F2',
         offBlack: '#161616',
-        neonBlue: '#4AE7D9'
+        neonBlue: '#4AE7D9',
+        deepBlue: '#071e26'
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 };

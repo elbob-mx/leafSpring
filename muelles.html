@@ -85,24 +85,22 @@
   <!-- BANNER / SLOGAN -->
   <div
     class="w-screen py-3 text-xl font-semibold tracking-wide text-center uppercase bg-green-700 text-offWhite h-30 font-roboto laptop:text-4xl laptop:py-6">
-    Amortiguadores</div>
+    Muelles</div>
 
   <!-- PRODUCTOS / MAIN -->
-  <section class="flex flex-col w-full h-full bg-neutral-400">
-    <div class="flex w-full h-screen bg-neutral-400">
-      <object data="./assets/pdf/gabriel/gabriel-amortiguadores.pdf" type="application/pdf"
-        class="w-10/12 h-full pt-10 pb-5 mx-auto laptop:pt-20 laptop:pb-10"></object>
+  <section class=" w-full h-full bg-neutral-400">
+    <div class="grid grid-cols-6 grid-rows-6 gap-10 p-10">
+      
+<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown button <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+<!-- Dropdown menu -->
+<div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+  <object data="./assets/pdf/rassini/rassini-ford.pdf" type="application/pdf"
+  class="w-11/12 h-screen pt-10 pb-5 mx-auto laptop:pt-20 laptop:pb-10" aria-labelledby="dropdownDefaultButton"></object>
+</div>
+
     </div>
 
-    <div class="flex content-center justify-center w-full h-full pb-10 mx-auto align-middle bg-neutral-400">
-      <a href="./assets/pdf/gabriel/gabriel-amortiguadores.pdf" download="sthebson pdf">
-        <button type="button"
-          class="px-6 py-3 text-2xl font-semibold tracking-wide duration-500 bg-offWhite laptop:hover:drop-shadow-lg hover:bg-verdeClaroLeaf rounded-xl font-roboto hover:text-offWhite"><i
-            class="fa-solid fa-download fa-bounce" style="color: #000000;"></i></i> Descargar PDF</button>
-      </a>
-    </div>
-
-   <!-- DESTACADOS AMORTIGUADORES -->   
+    <!-- DESTACADOS AMORTIGUADORES -->
   </section>
 
   <!-- MAPS / FOOTER -->
@@ -153,10 +151,13 @@
         class="col-span-1 text-xs tracking-wide text-center laptop:text-sm small:pt-8 tablet:col-span-2 laptop:py-2 text-zinc-400 laptop:col-span-2 font-roboto">
         <a href="https://elbob-mx.github.io/portfolio-rrgo/">Desarrollado por: <span
             class="font-semibold text-neonBlue"><i class="fa-solid fa-hand-peace" style="color: #4ae7d9;"></i class>
-            rrgo design</span></a></h6>
+            rrgo design</span></a>
+      </h6>
     </footer>
 
     <script src="js/actions.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 </body>
 
 </html>
