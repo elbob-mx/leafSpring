@@ -2221,6 +2221,10 @@ input:checked + .toggle-bg {
   padding: 2rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -3984,6 +3988,11 @@ input:checked + .toggle-bg {
   .laptop\:text-zinc-500 {
     --tw-text-opacity: 1;
     color: rgb(113 113 122 / var(--tw-text-opacity));
+  }
+
+  .laptop\:text-amber-800 {
+    --tw-text-opacity: 1;
+    color: rgb(146 64 14 / var(--tw-text-opacity));
   }
 
   .laptop\:transition-all {
