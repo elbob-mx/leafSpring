@@ -87,63 +87,113 @@
     class="w-screen py-3 text-xl font-semibold tracking-wide text-center uppercase bg-green-700 text-offWhite h-30 font-roboto laptop:text-4xl laptop:py-6">
     Muelles</div>
 
-  <!-- PRODUCTOS / MAIN -->
-  <section class="w-screen h-screen bg-neutral-400">
-    <div class="grid laptop:grid-cols-6 laptop:grid-rows-6 grid-cols-1 grid-flow-row-dense gap-10 p-16">
+    <p class="font-oswald text-2xl text-neutral-500 text-center p-5
+    ">Selecciona:</p>
+
+  <!-- MUELLES / MAIN -->
+  <section class="bg-neutral-100 h-screen w-screen">
+    <div class="grid laptop:grid-cols-6 laptop:grid-rows-6 grid-cols-1 grid-flow-row-dense laptop:gap-10 gap-5 laptop:p-10 p-8">
+
+      <!-- MODAL FORD -->
+      <!-- Modal toggle -->
+      <button data-modal-target="defaultModalFord" data-modal-toggle="defaultModalFord" class="text-white hover:text-[#1A3278] bg-[#1A3278] hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl font-roboto px-5 py-2.5 text-center" type="button">Ford</button>
       
-      <!-- FORD PDF -->
-<button id="dropDownDefaultButton" data-dropdown-toggle="dropdown-ford" class="justify-between text-white duration-300 hover:text-[#2c3968] bg-[#2c3968] hover:bg-offWhite focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Ford <i class="fa-solid fa-circle-chevron-down" style="color: #ffffff;"></i></button>
-<!-- Dropdown menu -->
-<div id="dropdown-ford" class="z-10 hidden bg-transparent divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-  <object data="./assets/pdf/rassini/rassini-ford.pdf" type="application/pdf"
-  class="w-[1500px] h-[900px]" aria-labelledby="dropdownDefaultButton"></object>
-</div>
-      <!-- INTERNATIONAL PDF -->
-<button id="dropDownDefaultButton" data-dropdown-toggle="dropdown-inter" class="justify-between text-white duration-300 hover:text-[#2c3968] bg-[#E46D1D] hover:bg-offWhite focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">International Navistar <i class="fa-solid fa-circle-chevron-down" style="color: #ffffff;"></i></button>
-<!-- Dropdown menu -->
-<div id="dropdown-inter" class="z-10 hidden bg-transparent divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-  <object data="./assets/pdf/rassini/rassini-international-navistar.pdf" type="application/pdf"
-  class="w-[1500px] h-[900px]" aria-labelledby="dropdownDefaultButton"></object>
-</div>
-
-<!-- MODAL MERCEDES -->
-<!-- Modal toggle -->
-<button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="justify-between block duration-500 hover:text-[#6D7E86] text-white bg-[#6D7E86] hover:bg-offWhite focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
-  Mercedes-Benz <i class="fa-solid fa-circle-chevron-down" style="color: #ffffff;"></i></button>
-
-<!-- Main modal -->
-<div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative w-10/12 h-4/6">
+      <!-- Main modal -->
+      <div id="defaultModalFord" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0">
+        <div class="relative h-screen w-screen laptop:p-10 p-4">
+      
         <!-- Modal content -->
-        <div class="relative bg-offWhite rounded-lg shadow dark:bg-gray-700">
+        <div class="relative bg-grisLeaf rounded-lg shadow h-screen">
             <!-- Modal header -->
-            <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                <h3 class="text-2xl font-semibold font-oswald text-gray-900 dark:text-white">
-                    Mercedes-Benz
+            <div class="flex items-start justify-between p-4 border-b rounded-t">
+                <h3 class="laptop:text-3xl font-semibold text-offWhite font-oswald">
+                    Ford
                 </h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
+                <button type="button" class="text-offWhite bg-transparent hover:bg-red-400 hover:text-offWhite rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModalFord">
                     <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    <span class="sr-only">Close modal</span>
+                    <span class="sr-only">Cerrar</span>
                 </button>
             </div>
             <!-- Modal body -->
-            <div class="p-6 space-y-6">
-              <object data="./assets/pdf/rassini/rassini-international-navistar.pdf" type="application/pdf"
-              class="w-[1500px] h-[900px]" aria-labelledby="dropdownDefaultButton"></object>
+            <div class="p-10 w-full h-full">
+              <object data="./assets/pdf/rassini/rassini-ford.pdf" type="application/pdf"
+              class="w-full h-full"></object>
             </div>
         </div>
     </div>
 </div>
+<!-- FIN MODAL FORD -->
+
+
+      <!-- MODAL INTERNATIONAL NAVISTAR -->
+      <!-- Modal toggle -->
+      <button data-modal-target="defaultModalIntl" data-modal-toggle="defaultModalIntl" class="text-white hover:text-orange-400 bg-orange-400 hover:bg-orange-100 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl font-roboto px-5 py-2.5 text-center" type="button">International Navistar</button>
+      
+      <!-- Main modal -->
+      <div id="defaultModalIntl" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0">
+        <div class="relative h-screen w-screen laptop:p-10 p-4">
+      
+        <!-- Modal content -->
+        <div class="relative bg-grisLeaf rounded-lg shadow h-screen">
+            <!-- Modal header -->
+            <div class="flex items-start justify-between p-4 border-b rounded-t">
+                <h3 class="laptop:text-3xl font-semibold text-offWhite font-oswald">
+                    International Navistar
+                </h3>
+                <button type="button" class="text-offWhite bg-transparent hover:bg-red-400 hover:text-offWhite rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModalIntl">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Cerrar</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-10 w-full h-full">
+              <object data="./assets/pdf/rassini/rassini-international-navistar.pdf" type="application/pdf"
+              class="w-full h-full"></object>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIN MODAL INTERNATIONAL NAVISTAR -->
+
+
+<!-- MODAL MERCEDES -->
+      <!-- Modal toggle -->
+      <button data-modal-target="defaultModalMerc" data-modal-toggle="defaultModalMerc" class="text-white hover:text-slate-500 bg-slate-500 hover:bg-slate-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl font-roboto px-5 py-2.5 text-center" type="button">Mercedes-Benz</button>
+      
+      <!-- Main modal -->
+      <div id="defaultModalMerc" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0">
+        <div class="relative h-screen w-screen laptop:p-10 p-4">
+      
+        <!-- Modal content -->
+        <div class="relative bg-grisLeaf rounded-lg shadow h-screen">
+            <!-- Modal header -->
+            <div class="flex items-start justify-between p-4 border-b rounded-t">
+                <h3 class="laptop:text-3xl font-semibold text-offWhite font-oswald">
+                  Mercedes-Benz
+                </h3>
+                <button type="button" class="text-offWhite bg-transparent hover:bg-red-400 hover:text-offWhite rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModalMerc">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Cerrar</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-10 w-full h-full">
+              <object data="./assets/pdf/rassini/rassini-mercedes.pdf" type="application/pdf"
+              class="w-full h-full"></object>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIN MODAL INTERNATIONAL NAVISTAR -->
 
 
     </div>
-
-    <!-- DESTACADOS AMORTIGUADORES -->
   </section>
+
+  <!-- DESTACADOS AMORTIGUADORES -->
 
   <!-- MAPS / FOOTER -->
   <div id="resume" class="items-center justify-center w-screen h-auto align-middle text-offWhite font-roboto">
-
     <!-- FOOTER -->
     <footer id="footer"
       class="grid items-center w-screen h-full grid-cols-1 p-10 content-stretch laptop:text-2xl tablet:grid-cols-2 laptop:grid-cols-2 laptop:h-auto bg-grisLeaf">
