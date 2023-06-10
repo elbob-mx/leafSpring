@@ -1170,6 +1170,18 @@ input:checked + .toggle-bg {
   grid-column: span 5 / span 5;
 }
 
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-start-3 {
+  grid-column-start: 3;
+}
+
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -3333,6 +3345,10 @@ input:checked + .toggle-bg {
 
   .laptop\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .laptop\:col-start-3 {
+    grid-column-start: 3;
   }
 
   .laptop\:mx-auto {
