@@ -2810,6 +2810,10 @@ input:checked + .toggle-bg {
     margin-top: 1rem;
   }
 
+  .mobile\:block {
+    display: block;
+  }
+
   .mobile\:h-screen {
     height: 100vh;
   }
