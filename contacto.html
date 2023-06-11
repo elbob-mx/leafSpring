@@ -179,23 +179,27 @@
 
     <!-- FOOTER -->
     <footer id="footer"
-      class="grid items-center w-screen content-stretch h-auto grid-cols-1 p-10 laptop:text-2xl tablet:grid-cols-2 laptop:grid-cols-2 laptop:h-auto bg-grisLeaf">
+      class="bg-grisLeaf grid laptop:grid-cols-6 laptop:grid-rows-2 grid-cols-1 laptop:gap-10 gap-5 laptop:p-10 p-8">
 
-      <div class="pb-6 laptop:pb-0">
-        <a href="#inicio">
-          <img class="h-16 pb-6 laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
-            alt="logo leaf spring mexico"></a>
+      <!-- LOGO FOOTER -->
+      <div class="laptop:col-start-1 justify-center laptop:col-end-2">
+      <a href="#inicio">
+        <img class="h-16 pb-6 laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
+          alt="logo leaf spring mexico"></a>
+        </div>
+
+      <div class="pb-6 laptop:pb-0 rounded-xl laptop:col-start-2 laptop:col-end-2">
         <ul>
-          <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
+          <li class="laptop:pb-3"><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
               href="inicio.html">inicio</a></li>
 
-          <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
+          <li class="laptop:pb-3"><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
               href="nosotros.html">nosotros</a></li>
 
-          <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
+          <li class="laptop:pb-3"><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
               href="productos.html">productos</a></li>
 
-          <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-amber-400"
+          <li class="laptop:pb-3"><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-amber-400"
               href="https://leafspringmexico.mercadoshops.com.mx/">mercadoshop</a></li>
 
           <li><a class="pb-2 text-gray-200 duration-500 laptop:pb-0 laptop:hover:pl-2 hover:text-verdeClaroLeaf"
@@ -203,26 +207,28 @@
         </ul>
       </div>
 
-      <div>
-        <p class="pb-2"><i class="text-base laptop:text-2xl fa-brands fa-whatsapp text-verdeClaroLeaf"></i> : (33)
+      <div class="laptop:col-start-3 laptop:col-end-7">
+        <p class="pb-1 laptop:pb-3"><i class="text-base laptop:text-4xl fa-brands fa-whatsapp text-verdeClaroLeaf align-middle pr-2"></i> (33)
           2578-7385</p>
-        <p class="pb-2"><i class="laptop:text-2xl fa-solid fa-phone text-verdeClaroLeaf"></i> tel: (33) 3645-0696</p>
-        <p class="pb-2"><i class="fa-solid fa-fax text-verdeClaroLeaf"></i> fax: (33) 3144-8289</p>
+        <p class="pb-1 laptop:pb-3"><i class="text-base laptop:text-3xl fa-solid fa-phone text-verdeClaroLeaf align-middle pr-2"></i> (33) 3645-0696</p>
+        <p class="pb-1 laptop:pb-3"><i class="text-base laptop:text-3xl fa-solid fa-fax text-verdeClaroLeaf pr-2 align-middle"></i> (33) 3144-8289</p>
         <p title="enviar correo a leaf spring mexico"
-          class="duration-500 laptop:hover:pl-2 laptop:hover:text-yellow-400"><a
+          class="duration-500 laptop:hover:pl-2 laptop:hover:text-yellow-400 tracking-widest"><a
             href="mailto:leafspringmexico@gmail.com"><i
-              class="duration-500 fa-solid fa-envelope text-verdeClaroLeaf"></i>
-            leafspringmexico@gmail.com</a></p>
+              class="pr-3 align-middle text-base laptop:text-3xl duration-500 fa-solid fa-envelope text-verdeClaroLeaf"></i>leafspringmexico@gmail.com</a></p>
       </div>
 
+      <div class="laptop:col-span-6 py-0 laptop:row-span-1 laptop:row-start-2 laptop:row-end-2 pt-12">
       <h6
-        class="col-span-1 text-xs tracking-wide text-center laptop:text-sm small:pt-8 tablet:col-span-2 laptop:py-2 text-zinc-400 laptop:col-span-2 font-roboto">
-        Copyright© 2023 Leaf Spring México. Todos los derechos reservados.</h6>
-        <h6
-        class="col-span-1 text-xs tracking-wide text-center laptop:text-sm small:pt-8 tablet:col-span-2 laptop:py-2 text-zinc-400 laptop:col-span-2 font-roboto">
+        class="col-span-1 text-xs tracking-wide text-center laptop:text-sm small:pt-8 tablet:col-span-2 laptop:py-2 text-zinc-400 laptop:col-span-6 font-roboto row-span-1 row-start-2">
+        Copyright© 2023 Leaf Spring México. Todos los derechos reservados.</h6>      
+
+      <h6
+        class="col-span-1 text-xs tracking-wide text-center laptop:text-sm small:pt-1 tablet:col-span-2 laptop:py-0 text-zinc-400 laptop:col-span-2 font-roboto">
         <a href="https://elbob-mx.github.io/portfolio-rrgo/">Desarrollado por: <span
             class="font-semibold text-neonBlue"><i class="fa-solid fa-hand-peace" style="color: #4ae7d9;"></i class>
             rrgo design</span></a></h6>
+      </div>
     </footer>
 
     <script src="js/actions.js"></script>
