@@ -1203,6 +1203,31 @@ input:checked + .toggle-bg {
   margin-bottom: 1.25rem;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mx-1\.5 {
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mx-3\.5 {
+  margin-left: 0.875rem;
+  margin-right: 0.875rem;
+}
+
+.mx-40 {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1393,6 +1418,14 @@ input:checked + .toggle-bg {
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .flex-1 {
@@ -2006,6 +2039,16 @@ input:checked + .toggle-bg {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-44 {
+  padding-left: 11rem;
+  padding-right: 11rem;
 }
 
 .pb-1 {
@@ -2915,6 +2958,10 @@ input:checked + .toggle-bg {
 
   .tablet\:w-screen {
     width: 100vw;
+  }
+
+  .tablet\:w-3\/4 {
+    width: 75%;
   }
 
   .tablet\:px-20 {
