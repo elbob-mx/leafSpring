@@ -1848,6 +1848,16 @@ input:checked + .toggle-bg {
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
 }
 
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 36 36 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -3317,6 +3327,10 @@ input:checked + .toggle-bg {
 
   .laptop\:grid-rows-6 {
     grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+
+  .laptop\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .laptop\:flex-row {
