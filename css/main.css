@@ -1186,10 +1186,6 @@ input:checked + .toggle-bg {
   grid-row: span 3 / span 3;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
