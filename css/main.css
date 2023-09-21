@@ -1221,11 +1221,6 @@ input:checked + .toggle-bg {
   margin-bottom: 1.25rem;
 }
 
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1334,6 +1329,10 @@ input:checked + .toggle-bg {
   height: 6rem;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .h-32 {
   height: 8rem;
 }
@@ -1368,22 +1367,6 @@ input:checked + .toggle-bg {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-28 {
-  height: 7rem;
-}
-
-.h-\[20\%\] {
-  height: 20%;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .w-1\/2 {
@@ -1432,14 +1415,6 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-80 {
-  width: 20rem;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .flex-1 {
@@ -1617,6 +1592,10 @@ input:checked + .toggle-bg {
   justify-items: center;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-32 {
   gap: 8rem;
 }
@@ -1627,22 +1606,6 @@ input:checked + .toggle-bg {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-20 {
-  gap: 5rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-0 {
-  gap: 0px;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1970,10 +1933,6 @@ input:checked + .toggle-bg {
 .object-right {
   -o-object-position: right;
      object-position: right;
-}
-
-.p-0 {
-  padding: 0px;
 }
 
 .p-1 {
@@ -3461,16 +3420,12 @@ input:checked + .toggle-bg {
     gap: 2.5rem;
   }
 
-  .laptop\:gap-24 {
-    gap: 6rem;
-  }
-
-  .laptop\:gap-32 {
-    gap: 8rem;
-  }
-
   .laptop\:gap-20 {
     gap: 5rem;
+  }
+
+  .laptop\:gap-24 {
+    gap: 6rem;
   }
 
   .laptop\:self-start {
@@ -3715,11 +3670,6 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 1023px) {
-  .ipad\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
   .ipad\:ml-0 {
     margin-left: 0px;
   }
@@ -3786,6 +3736,10 @@ input:checked + .toggle-bg {
     margin-left: 3rem;
   }
 
+  .hd\:h-36 {
+    height: 9rem;
+  }
+
   .hd\:h-40 {
     height: 10rem;
   }
@@ -3796,14 +3750,6 @@ input:checked + .toggle-bg {
 
   .hd\:h-56 {
     height: 14rem;
-  }
-
-  .hd\:h-32 {
-    height: 8rem;
-  }
-
-  .hd\:h-36 {
-    height: 9rem;
   }
 
   .hd\:self-start {
