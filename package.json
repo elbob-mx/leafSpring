@@ -11,11 +11,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.16",
-    "flowbite": "^1.6.5",
-    "postcss": "^8.4.30"
+    "flowbite": "^1.6.5"
   }
 }
