@@ -1623,6 +1623,10 @@ input:checked + .toggle-bg {
   gap: 2rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1635,6 +1639,10 @@ input:checked + .toggle-bg {
 
 .self-center {
   align-self: center;
+}
+
+.self-stretch {
+  align-self: stretch;
 }
 
 .overflow-hidden {
@@ -2084,6 +2092,11 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -2412,6 +2425,11 @@ input:checked + .toggle-bg {
   color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
+.text-offBlack {
+  --tw-text-opacity: 1;
+  color: rgb(22 22 22 / var(--tw-text-opacity));
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2563,6 +2581,10 @@ input:checked + .toggle-bg {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:rounded-lg:hover {
+  border-radius: 0.5rem;
+}
+
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2611,6 +2633,15 @@ input:checked + .toggle-bg {
 .hover\:bg-zinc-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.hover\:p-5:hover {
+  padding: 1.25rem;
 }
 
 .hover\:text-amber-400:hover {
@@ -2666,6 +2697,10 @@ input:checked + .toggle-bg {
 .hover\:drop-shadow-xl:hover {
   --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.hover\:duration-300:hover {
+  transition-duration: 300ms;
 }
 
 .focus\:border-verdeClaroLeaf:focus {
@@ -3109,6 +3144,16 @@ input:checked + .toggle-bg {
     line-height: 1.5rem;
   }
 
+  .tablet\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .tablet\:text-offWhite {
+    --tw-text-opacity: 1;
+    color: rgb(242 242 242 / var(--tw-text-opacity));
+  }
+
   .tablet\:hover\:drop-shadow-lg:hover {
     --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -3422,8 +3467,20 @@ input:checked + .toggle-bg {
     flex-direction: row;
   }
 
+  .laptop\:flex-col {
+    flex-direction: column;
+  }
+
+  .laptop\:content-evenly {
+    align-content: space-evenly;
+  }
+
   .laptop\:items-center {
     align-items: center;
+  }
+
+  .laptop\:justify-start {
+    justify-content: flex-start;
   }
 
   .laptop\:justify-end {
@@ -3434,8 +3491,16 @@ input:checked + .toggle-bg {
     justify-content: center;
   }
 
+  .laptop\:justify-between {
+    justify-content: space-between;
+  }
+
   .laptop\:justify-around {
     justify-content: space-around;
+  }
+
+  .laptop\:justify-evenly {
+    justify-content: space-evenly;
   }
 
   .laptop\:gap-10 {
@@ -3450,8 +3515,20 @@ input:checked + .toggle-bg {
     gap: 6rem;
   }
 
+  .laptop\:gap-0 {
+    gap: 0px;
+  }
+
+  .laptop\:gap-16 {
+    gap: 4rem;
+  }
+
   .laptop\:self-start {
     align-self: flex-start;
+  }
+
+  .laptop\:self-stretch {
+    align-self: stretch;
   }
 
   .laptop\:border-b-0 {
@@ -3569,12 +3646,24 @@ input:checked + .toggle-bg {
     padding-top: 2rem;
   }
 
+  .laptop\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
   .laptop\:text-left {
     text-align: left;
   }
 
   .laptop\:text-right {
     text-align: right;
+  }
+
+  .laptop\:align-top {
+    vertical-align: top;
+  }
+
+  .laptop\:align-middle {
+    vertical-align: middle;
   }
 
   .laptop\:font-roboto {
@@ -3630,6 +3719,11 @@ input:checked + .toggle-bg {
     line-height: 1.75rem;
   }
 
+  .laptop\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .laptop\:font-semibold {
     font-weight: 600;
   }
@@ -3660,6 +3754,11 @@ input:checked + .toggle-bg {
   .laptop\:text-zinc-500 {
     --tw-text-opacity: 1;
     color: rgb(113 113 122 / var(--tw-text-opacity));
+  }
+
+  .laptop\:text-offBlack {
+    --tw-text-opacity: 1;
+    color: rgb(22 22 22 / var(--tw-text-opacity));
   }
 
   .laptop\:transition-all {
