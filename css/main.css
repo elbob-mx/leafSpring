@@ -2952,6 +2952,31 @@ input:checked + .toggle-bg {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .mobile\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .mobile\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .mobile\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .mobile\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .mobile\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (min-width: 567px) {
@@ -2979,6 +3004,21 @@ input:checked + .toggle-bg {
   .mobileHorSmall\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .mobileHorSmall\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .mobileHorSmall\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .mobileHorSmall\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -3020,6 +3060,29 @@ input:checked + .toggle-bg {
   .mobileHor\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .mobileHor\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .mobileHor\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .mobileHor\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .mobileHor\:text-\[8px\] {
+    font-size: 8px;
+  }
+
+  .mobileHor\:text-\[32px\] {
+    font-size: 32px;
   }
 }
 
@@ -3757,6 +3820,11 @@ input:checked + .toggle-bg {
     line-height: 2rem;
   }
 
+  .ipad\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .ipad\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -3780,6 +3848,11 @@ input:checked + .toggle-bg {
   .ipad\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .ipad\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
@@ -3836,9 +3909,34 @@ input:checked + .toggle-bg {
     font-size: 6rem;
     line-height: 1;
   }
+
+  .hd\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .hd\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .hd\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .hd\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1440px) {
+  .fhd\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
   .fhd\:text-9xl {
     font-size: 8rem;
     line-height: 1;
