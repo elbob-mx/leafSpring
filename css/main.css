@@ -1283,10 +1283,6 @@ input:checked + .toggle-bg {
   box-sizing: border-box;
 }
 
-.box-content {
-  box-sizing: content-box;
-}
-
 .block {
   display: block;
 }
