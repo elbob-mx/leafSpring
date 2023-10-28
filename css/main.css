@@ -3813,11 +3813,20 @@ input:checked + .toggle-bg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .ipad\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1365px) {
   .hd\:m-0 {
     margin: 0px;
+  }
+
+  .hd\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .hd\:h-32 {
@@ -3864,11 +3873,70 @@ input:checked + .toggle-bg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .hd\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .hd\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1440px) {
+  .fhd\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .fhd\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .fhd\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .fhd\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .fhd\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .fhd\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .fhd\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .fhd\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .fhd\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .fhd\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .fhd\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
