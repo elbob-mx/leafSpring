@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1092,6 +1092,10 @@ input:checked + .toggle-bg {
   bottom: 0px;
 }
 
+.bottom-\[18\%\] {
+  bottom: 18%;
+}
+
 .bottom-\[35\%\] {
   bottom: 35%;
 }
@@ -1148,32 +1152,12 @@ input:checked + .toggle-bg {
   top: 25%;
 }
 
-.bottom-\[30\%\] {
-  bottom: 30%;
+.top-1\/2 {
+  top: 50%;
 }
 
-.bottom-\[40\%\] {
-  bottom: 40%;
-}
-
-.bottom-\[50\%\] {
-  bottom: 50%;
-}
-
-.bottom-\[70\%\] {
-  bottom: 70%;
-}
-
-.bottom-\[20\%\] {
-  bottom: 20%;
-}
-
-.bottom-\[15\%\] {
-  bottom: 15%;
-}
-
-.bottom-\[18\%\] {
-  bottom: 18%;
+.top-1\/3 {
+  top: 33.333333%;
 }
 
 .-z-10 {
@@ -1295,10 +1279,6 @@ input:checked + .toggle-bg {
   margin-top: 0px;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1317,10 +1297,6 @@ input:checked + .toggle-bg {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .box-border {
@@ -1419,6 +1395,51 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-3\/4 {
+  height: 75%;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-\[calc\(100vh-250px\)\] {
+  height: calc(100vh - 250px);
+}
+
+.h-\[calc\(100vh-300px\)\] {
+  height: calc(100vh - 300px);
+}
+
+.h-\[calc\(100vh-500px\)\] {
+  height: calc(100vh - 500px);
+}
+
+.h-\[calc\(100vh-450px\)\] {
+  height: calc(100vh - 450px);
+}
+
+.h-\[calc\(100vh-30px\)\] {
+  height: calc(100vh - 30px);
+}
+
+.h-\[calc\(100vh-400px\)\] {
+  height: calc(100vh - 400px);
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1433,6 +1454,10 @@ input:checked + .toggle-bg {
 
 .w-28 {
   width: 7rem;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .w-4 {
@@ -1461,10 +1486,6 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .flex-1 {
@@ -1720,6 +1741,10 @@ input:checked + .toggle-bg {
   border-radius: 0.75rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .rounded-l-lg {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -1972,6 +1997,10 @@ input:checked + .toggle-bg {
   background-size: 0% 2px;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-left-bottom {
   background-position: left bottom;
 }
@@ -1982,6 +2011,18 @@ input:checked + .toggle-bg {
 
 .bg-top {
   background-position: top;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-right-top {
+  background-position: right top;
 }
 
 .bg-no-repeat {
@@ -2137,21 +2178,6 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -2244,10 +2270,6 @@ input:checked + .toggle-bg {
   font-family: Roboto, sans-serif;
 }
 
-.font-prompt {
-  font-family: Prompt, sans-serif;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2295,6 +2317,11 @@ input:checked + .toggle-bg {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -2513,16 +2540,6 @@ input:checked + .toggle-bg {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-cyan-500\/50 {
-  --tw-shadow-color: rgb(6 182 212 / 0.5);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-offWhite {
-  --tw-shadow-color: #F2F2F2;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .outline {
   outline-style: solid;
 }
@@ -2582,14 +2599,6 @@ input:checked + .toggle-bg {
   transition-duration: 150ms;
 }
 
-.delay-100 {
-  transition-delay: 100ms;
-}
-
-.delay-1000 {
-  transition-delay: 1000ms;
-}
-
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -2602,24 +2611,12 @@ input:checked + .toggle-bg {
   transition-duration: 500ms;
 }
 
-.duration-700 {
-  transition-duration: 700ms;
-}
-
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.will-change-auto {
-  will-change: auto;
-}
-
-.hover\:hidden:hover {
-  display: none;
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .hover\:-translate-y-1:hover {
@@ -2669,20 +2666,10 @@ input:checked + .toggle-bg {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:scale-125:hover {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:scale-150:hover {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:rounded-full:hover {
-  border-radius: 9999px;
 }
 
 .hover\:border-gray-300:hover {
@@ -2739,15 +2726,6 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-yellow-300:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 202 21 / var(--tw-bg-opacity));
-}
-
-.hover\:font-bold:hover {
-  font-weight: 700;
-}
-
 .hover\:text-amber-400:hover {
   --tw-text-opacity: 1;
   color: rgb(251 191 36 / var(--tw-text-opacity));
@@ -2793,25 +2771,10 @@ input:checked + .toggle-bg {
   color: rgb(227 160 8 / var(--tw-text-opacity));
 }
 
-.hover\:text-transparent:hover {
-  color: transparent;
-}
-
 .hover\:shadow-lg:hover {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.hover\:shadow-md:hover {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.hover\:shadow-offWhite:hover {
-  --tw-shadow-color: #F2F2F2;
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .hover\:shadow-verdeClaroLeaf:hover {
@@ -2826,11 +2789,6 @@ input:checked + .toggle-bg {
 
 .hover\:drop-shadow-xl:hover {
   --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.hover\:drop-shadow-lg:hover {
-  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -3047,6 +3005,10 @@ input:checked + .toggle-bg {
     height: auto;
   }
 
+  .small\:h-screen {
+    height: 100vh;
+  }
+
   .small\:w-\[180px\] {
     width: 180px;
   }
@@ -3109,11 +3071,6 @@ input:checked + .toggle-bg {
     width: 100vw;
   }
 
-  .mobile\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .mobile\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -3122,6 +3079,20 @@ input:checked + .toggle-bg {
   .mobile\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .mobile\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .mobile\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .mobile\:text-\[42px\] {
+    font-size: 42px;
   }
 }
 
@@ -3393,6 +3364,11 @@ input:checked + .toggle-bg {
     line-height: 2rem;
   }
 
+  .vertIpadMini\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
   .vertIpadMini\:text-8xl {
     font-size: 6rem;
     line-height: 1;
@@ -3553,6 +3529,14 @@ input:checked + .toggle-bg {
 
   .laptop\:h-screen {
     height: 100vh;
+  }
+
+  .laptop\:h-12 {
+    height: 3rem;
+  }
+
+  .laptop\:h-16 {
+    height: 4rem;
   }
 
   .laptop\:w-32 {
@@ -3827,11 +3811,6 @@ input:checked + .toggle-bg {
     line-height: 1;
   }
 
-  .laptop\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
   .laptop\:text-\[12px\] {
     font-size: 12px;
   }
@@ -3958,11 +3937,6 @@ input:checked + .toggle-bg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-
-  .ipad\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 1365px) {
@@ -4013,46 +3987,11 @@ input:checked + .toggle-bg {
     font-size: 6rem;
     line-height: 1;
   }
-
-  .hd\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .hd\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .hd\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 1440px) {
   .fhd\:mt-3 {
     margin-top: 0.75rem;
-  }
-
-  .fhd\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .fhd\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .fhd\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .fhd\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
   }
 
   .fhd\:px-8 {
@@ -4065,23 +4004,23 @@ input:checked + .toggle-bg {
     padding-bottom: 0.75rem;
   }
 
-  .fhd\:text-9xl {
-    font-size: 8rem;
+  .fhd\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .fhd\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .fhd\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 
   .fhd\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .fhd\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .fhd\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
