@@ -51,7 +51,8 @@
     class="top-0 z-40 flex flex-row self-center w-screen p-3 laptop:items-center laptop:justify-around laptop:p-6 laptop:w-screen bg-zinc-100">
     <div class="flex flex-row items-center justify-between flex-grow mx-auto align-middle laptop:justify-around">
       <a href="index.html">
-        <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring" class="h-16 pl-2 laptop:pl-0 laptop:h-24">
+        <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring"
+          class="h-16 pl-2 lazyload laptop:pl-0 laptop:h-24">
       </a>
 
       <!-- HAMBURGER MENU MOBILE -->
@@ -60,7 +61,7 @@
         <div id="hamBtn"
           class="fixed flex flex-row p-2 text-4xl align-middle rounded-md cursor-pointer laptop:hidden right-3 top-6 bg-zinc-200">
           <img onclick="Open(this)" src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu"
-            title="hamburger menu" class="h-6 duration-500 laptop:hidden">
+            title="hamburger menu" class="h-6 duration-500 lazyload laptop:hidden">
         </div>
 
 
@@ -104,7 +105,7 @@
     Muelles</h1>
 
   <img src="./img/banner/leaf-spring-header.jpg" alt="banner principal muelles"
-    class="object-cover w-screen bg-black laptop:h-1/5 h-1/5 brightness-50">
+    class="object-cover w-screen bg-black lazyload laptop:h-1/5 h-1/5 brightness-50">
 
   <p
     class="p-6 text-xl font-normal text-center laptop:px-32 bg-neutral-200 drop-shadow-md laptop:pt-8 laptop:text-2xl font-oswald text-neutral-700 ">
@@ -1374,7 +1375,7 @@
       <!-- LOGO FOOTER -->
       <div class="justify-center laptop:col-start-1 laptop:col-end-1">
         <a href="#inicio">
-          <img class="h-16 pb-6 laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
+          <img class="h-16 pb-6 lazyload laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
             alt="logo leaf spring mexico"></a>
       </div>
 
@@ -1429,7 +1430,7 @@
           class="flex pt-10 mx-auto justify-center align-middle text-[12px] font-light tracking-wide text-center laptop:justify-end laptop:text-right laptop:text-[12px] small:pt-3 tablet:col-span-2 text-neutral-300 laptop:col-span-2 font-roboto">
           <a href="#" class="flex items-center text-offWhite">creado por:
             <div>
-              <img src="./img/logos/webbyGravy-logo.svg" alt="webbyGravy diseño" class="p-0 ml-2 w-28">
+              <img src="./img/logos/webbyGravy-logo.svg" alt="webbyGravy diseño" class="p-0 ml-2 lazyload w-28">
             </div>
           </a>
         </div>
@@ -1440,6 +1441,8 @@
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script defer src="js/disallow.js"></script>
+    <!-- IMAGE LAZYSIZES -->
+    <script src="lazysizes.min.js" async=""></script>
 </body>
 
 </html>
