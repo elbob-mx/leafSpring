@@ -24,11 +24,11 @@
   <link rel="shortcut icon" href="img/logos/leaf-spring/ls-favicon-wht.svg" type="image/x-icon" />
 </head>
 
-<body class="flex flex-col w-full overflow-x-hidden antialiased bg-offWhite text-grisLeaf" tabindex="-1">
+<body class="flex flex-col w-screen overflow-x-hidden antialiased bg-offWhite text-grisLeaf" tabindex="-1">
 
   <!-- MAIN MENU -->
   <div id="ham"
-    class="fixed z-50 flex flex-col items-center justify-center hidden w-screen h-screen overflow-x-hidden overflow-y-hidden text-4xl tracking-wide duration-500 origin-left bg-verdeLeaf text-offWhite laptop:hidden">
+    class="fixed z-50 flex flex-col items-center justify-center hidden w-screen h-screen overflow-x-hidden overflow-y-hidden text-4xl tracking-wide duration-500 origin-left bg-gradient-to-b from-green-500 to-green-700 text-offWhite laptop:hidden">
 
     <ul class="font-roboto">
       <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="index.html"><i
@@ -51,7 +51,8 @@
     class="top-0 z-40 flex flex-row self-center w-screen p-3 laptop:items-center laptop:justify-around laptop:p-6 laptop:w-screen bg-zinc-100">
     <div class="flex flex-row items-center justify-between flex-grow mx-auto align-middle laptop:justify-around">
       <a href="index.html">
-        <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring" class="h-12 pl-2 laptop:pl-0 laptop:h-20">
+        <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring"
+          class="h-12 pl-2 lazyload laptop:pl-0 laptop:h-20">
       </a>
 
       <!-- HAMBURGER MENU MOBILE -->
@@ -60,7 +61,7 @@
         <div id="hamBtn"
           class="fixed flex flex-row p-2 text-4xl align-middle rounded-md cursor-pointer laptop:hidden right-3 top-6 bg-zinc-200">
           <img onclick="Open(this)" src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu"
-            title="hamburger menu" class="h-4 laptop:hidden">
+            title="hamburger menu" class="h-4 lazyload laptop:hidden">
         </div>
 
 
@@ -108,8 +109,8 @@
     <h1
       class="absolute z-40 flex flex-col self-center ml-0 text-3xl tracking-wider text-center uppercase mobile:text-5xl bigHor:text-2xl tablet:text-7xl ipad:text-5xl laptop:self-start laptop:ml-12 laptop:text-left font-oswald vertIpadMini:text-8xl laptop:text-6xl text-offWhite laptop:items-center laptop:align-middle">
       más<br>sobre<br>nosotros</h1>
-    <img src="./img/banner/ls-nosotros-main-banner.jpg" alt="banner principal leaf spring mexico"
-      class="w-screen object-cover object-center laptop:h-[calc(50vh-144px)] h-[calc(100vh-400px)] bg-right bg-black">
+    <img src="./img/banner/nosotrosLeaf2.jpg" alt="banner principal leaf spring mexico"
+      class="lazyload w-screen object-cover object-center laptop:origin-top-left laptop:h-[calc(75vh-144px)] h-[calc(100vh-400px)] brightness-50 bg-right bg-black">
   </div>
 
   <!-- NOSOTROS / MAIN -->
@@ -148,7 +149,7 @@
         <h3 class="pb-4 text-2xl font-medium tracking-wide text-grisLeaf"><i
             class="text-3xl text-verdeLeaf fa-solid fa-building"></i> Nuestras oficinas:</h3>
         <iframe title="ubicacion oficinas leaf spring mexico"
-          class="items-center justify-center w-5/6 h-screen p-5 align-middle rounded-2xl bg-grisLeaf"
+          class="items-center justify-center w-5/6 align-middle laptop:h-screen h-3/4 rounded-2xl"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.1340018219994!2d-103.34668838464898!3d20.6641266055009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b21d0bda0f4b%3A0x39e7705f2d9aae6!2sC.%20Gante%20156%2C%20Las%20Conchas%2C%2044460%20Guadalajara%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1680376441582!5m2!1ses-419!2smx"
           width="400" height="400" style="border:1" frameborder=”1″ allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -167,7 +168,7 @@
       <!-- LOGO FOOTER -->
       <div class="justify-center laptop:col-start-1 laptop:col-end-1">
         <a href="#inicio">
-          <img class="h-16 pb-6 laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
+          <img class="h-16 pb-6 lazyload laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
             alt="logo leaf spring mexico"></a>
       </div>
 
@@ -222,7 +223,7 @@
           class="flex pt-10 mx-auto justify-center align-middle text-[12px] font-light tracking-wide text-center laptop:justify-end laptop:text-right laptop:text-[12px] small:pt-3 tablet:col-span-2 text-neutral-300 laptop:col-span-2 font-roboto">
           <a href="#" class="flex items-center text-offWhite">creado por:
             <div>
-              <img src="./img/logos/webbyGravy-logo.svg" alt="webbyGravy diseño" class="p-0 ml-2 w-28">
+              <img src="./img/logos/webbyGravy-logo.svg" alt="webbyGravy diseño" class="p-0 ml-2 lazyload w-28">
             </div>
           </a>
         </div>
@@ -231,6 +232,8 @@
 
     <script src="js/actions.js"></script>
     <script defer src="js/disallow.js"></script>
+    <!-- IMAGE LAZYSIZES -->
+    <script src="lazysizes.min.js" async=""></script>
 </body>
 
 </html>

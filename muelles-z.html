@@ -23,7 +23,7 @@
   <link rel="shortcut icon" href="img/logos/leaf-spring/ls-favicon-wht.svg" type="image/x-icon" />
 </head>
 
-<body class="flex flex-col w-full overflow-x-hidden antialiased bg-offWhite" tabindex="-1">
+<body class="flex flex-col w-screen overflow-x-hidden antialiased bg-offWhite" tabindex="-1">
 
   <!-- MAIN MENU -->
   <div id="ham"
@@ -50,7 +50,8 @@
     class="top-0 z-40 flex flex-row self-center w-screen p-3 laptop:items-center laptop:justify-around laptop:p-6 laptop:w-screen bg-zinc-100">
     <div class="flex flex-row items-center justify-between flex-grow mx-auto align-middle laptop:justify-around">
       <a href="index.html">
-        <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring" class="h-16 pl-2 laptop:pl-0 laptop:h-24">
+        <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring"
+          class="h-16 pl-2 lazyload laptop:pl-0 laptop:h-24">
       </a>
 
       <!-- HAMBURGER MENU MOBILE -->
@@ -59,7 +60,7 @@
         <div id="hamBtn"
           class="fixed flex flex-row p-2 text-4xl align-middle rounded-md cursor-pointer laptop:hidden right-3 top-6 bg-zinc-200">
           <img onclick="Open(this)" src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu"
-            title="hamburger menu" class="h-6 duration-500 laptop:hidden">
+            title="hamburger menu" class="h-6 duration-500 lazyload laptop:hidden">
         </div>
 
 
@@ -108,8 +109,8 @@
     carga ligera y pesada, respaldados por las mejores marcas a nivel nacional e internacional.</p>
 
   <!-- PRODUCTOS / MAIN -->
-  <section class="flex flex-col w-full h-full bg-neutral-400">
-    <div class="flex w-full h-screen bg-neutral-400">
+  <section class="flex flex-col w-screen h-full bg-neutral-400">
+    <div class="flex w-screen h-screen bg-neutral-400">
       <object data="./assets/pdf/rassini/rassini-muelles-z.pdf" type="application/pdf"
         class="w-10/12 h-full pt-10 pb-5 mx-auto laptop:pt-20 laptop:pb-10"></object>
     </div>
@@ -128,7 +129,7 @@
       <a target="_self" href="https://articulo.mercadolibre.com.mx/MLM-773021670-muelle-z-zeta-hendrickson-50-389-_JM"
         accesskey="s" tabindex="0">
         <img src="./img/destacados-ml/dest-hendrickson-50389.jpg"
-          class="h-32 duration-500 rounded-lg hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
+          class="h-32 duration-500 rounded-lg lazyload hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
           alt="muelle en z hendrickson 50389" title="muelle en z hendrickson 50389"></a>
       <p
         class="items-center justify-center mx-auto text-lg font-semibold text-left duration-300 laptop:pt-5 hover:text-offWhite font-oswald w-28">
@@ -142,7 +143,7 @@
         href="https://articulo.mercadolibre.com.mx/MLM-773026310-muelle-z-zeta-navistar-international-551195-_JM"
         accesskey="s" tabindex="0">
         <img src="./img/destacados-ml/dest-navistar-551195.jpg"
-          class="h-32 duration-500 rounded-lg hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
+          class="h-32 duration-500 rounded-lg lazyload hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
           alt="muelle en z navistar 551195" title="muelle en z navistar 551195"></a>
       <p
         class="items-center justify-center mx-auto text-lg font-semibold text-left duration-300 laptop:pt-5 hover:text-offWhite font-oswald w-28">
@@ -155,7 +156,7 @@
       <a target="_self" href="https://articulo.mercadolibre.com.mx/MLM-1819076560-muelle-z-zeta-volvo-96-1261-_JM"
         accesskey="s" tabindex="0">
         <img src="./img/destacados-ml/dest-volvo-961261.jpg"
-          class="h-32 duration-500 rounded-lg hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
+          class="h-32 duration-500 rounded-lg lazyload hd:h-44 tablet:h-52 ipad:h-24 laptop:h-40 hover:scale-110"
           alt="muelle en z volvo 961261" title="muelle en z volvo 961261"></a>
       <p
         class="items-center justify-center pt-4 mx-auto text-lg font-semibold text-left duration-300 laptop:pt-5 hover:text-offWhite font-oswald w-28">
@@ -174,7 +175,7 @@
     <!-- LOGO FOOTER -->
     <div class="justify-center laptop:col-start-1 laptop:col-end-1">
       <a href="#inicio">
-        <img class="h-16 pb-6 laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
+        <img class="h-16 pb-6 lazyload laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
           alt="logo leaf spring mexico"></a>
     </div>
 
@@ -229,7 +230,7 @@
         class="flex pt-10 mx-auto justify-center align-middle text-[12px] font-light tracking-wide text-center laptop:justify-end laptop:text-right laptop:text-[12px] small:pt-3 tablet:col-span-2 text-neutral-300 laptop:col-span-2 font-roboto">
         <a href="#" class="flex items-center text-offWhite">creado por:
           <div>
-            <img src="./img/logos/webbyGravy-logo.svg" alt="webbyGravy diseño" class="p-0 ml-2 w-28">
+            <img src="./img/logos/webbyGravy-logo.svg" alt="webbyGravy diseño" class="p-0 ml-2 lazyload w-28">
           </div>
         </a>
       </div>
@@ -238,6 +239,8 @@
 
   <script src="js/actions.js"></script>
   <script defer src="js/disallow.js"></script>
+  <!-- IMAGE LAZYSIZES -->
+  <script src="lazysizes.min.js" async=""></script>
 </body>
 
 </html>

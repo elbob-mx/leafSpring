@@ -24,7 +24,7 @@
   <link rel="shortcut icon" href="img/logos/leaf-spring/ls-favicon-wht.svg" type="image/x-icon" />
 </head>
 
-<body class="flex flex-col w-full overflow-x-hidden antialiased bg-offWhite" tabindex="-1">
+<body class="flex flex-col w-screen overflow-x-hidden antialiased bg-offWhite" tabindex="-1">
 
   <!-- MAIN MENU -->
   <div id="ham"
@@ -51,7 +51,8 @@
     class="top-0 z-40 flex flex-row self-center w-screen p-3 laptop:items-center laptop:justify-around laptop:p-6 laptop:w-screen bg-zinc-100">
     <div class="flex flex-row items-center justify-between flex-grow mx-auto align-middle laptop:justify-around">
       <a href="index.html">
-        <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring" class="h-16 pl-2 laptop:pl-0 laptop:h-24">
+        <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring"
+          class="h-16 pl-2 laptop:pl-0 laptop:h-24 lazyload">
       </a>
 
       <!-- HAMBURGER MENU MOBILE -->
@@ -60,7 +61,7 @@
         <div id="hamBtn"
           class="fixed flex flex-row p-2 text-4xl align-middle rounded-md cursor-pointer laptop:hidden right-3 top-6 bg-zinc-200">
           <img onclick="Open(this)" src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu"
-            title="hamburger menu" class="h-6 duration-500 laptop:hidden">
+            title="hamburger menu" class="h-6 duration-500 lazyload laptop:hidden">
         </div>
 
 
@@ -109,8 +110,8 @@
     tractocamión y remolque. Disponibles para cabina, suspensión delantera y trasera.</p>
 
   <!-- PRODUCTOS / MAIN -->
-  <section class="flex flex-col w-full h-full bg-neutral-400">
-    <div class="flex w-full h-screen bg-neutral-400">
+  <section class="flex flex-col w-screen h-full bg-neutral-400">
+    <div class="flex w-screen h-screen bg-neutral-400">
       <object data="./assets/pdf/gabriel/gabriel-amortiguadores.pdf" type="application/pdf"
         class="w-10/12 h-full pt-10 pb-5 mx-auto laptop:pt-20 laptop:pb-10"></object>
     </div>
@@ -126,9 +127,9 @@
       class="grid grid-cols-1 gap-5 p-8 bg-grisLeaf laptop:grid-cols-6 laptop:grid-rows-1 laptop:gap-10 laptop:p-10">
 
       <!-- LOGO FOOTER -->
-      <div class="justify-center laptop:col-start-1 laptop:col-end-1">
+      <div class="justify-center lazyload laptop:col-start-1 laptop:col-end-1">
         <a href="#inicio">
-          <img class="h-16 pb-6 laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
+          <img class="h-16 pb-6 laptop:h-20 lazyload" src="./img/logos/leaf-spring/ls-logo-wht.svg"
             alt="logo leaf spring mexico"></a>
       </div>
 
@@ -183,7 +184,7 @@
           class="flex pt-10 mx-auto justify-center align-middle text-[12px] font-light tracking-wide text-center laptop:justify-end laptop:text-right laptop:text-[12px] small:pt-3 tablet:col-span-2 text-neutral-300 laptop:col-span-2 font-roboto">
           <a href="#" class="flex items-center text-offWhite">creado por:
             <div>
-              <img src="./img/logos/webbyGravy-logo.svg" alt="webbyGravy diseño" class="p-0 ml-2 w-28">
+              <img src="./img/logos/webbyGravy-logo.svg" alt="webbyGravy diseño" class="p-0 ml-2 w-28 lazyload">
             </div>
           </a>
         </div>
@@ -192,6 +193,8 @@
 
     <script src="js/actions.js"></script>
     <script defer src="js/disallow.js"></script>
+    <!-- IMAGE LAZYSIZES -->
+    <script src="lazysizes.min.js" async=""></script>
 </body>
 
 </html>

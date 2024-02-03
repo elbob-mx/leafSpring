@@ -24,11 +24,11 @@
   <link rel="shortcut icon" href="img/logos/leaf-spring/ls-favicon-wht.svg" type="image/x-icon" />
 </head>
 
-<body class="flex flex-col w-full overflow-x-hidden antialiased bg-offWhite text-grisLeaf" tabindex="-1">
+<body class="flex flex-col w-screen overflow-x-hidden antialiased bg-offWhite text-grisLeaf" tabindex="-1">
 
   <!-- MAIN MENU -->
   <div id="ham"
-    class="fixed z-50 flex flex-col items-center justify-center hidden w-screen h-screen overflow-x-hidden overflow-y-hidden text-4xl tracking-wide duration-500 origin-left bg-verdeLeaf text-offWhite laptop:hidden">
+    class="fixed z-50 flex flex-col items-center justify-center hidden w-screen h-screen overflow-x-hidden overflow-y-hidden text-4xl tracking-wide duration-500 origin-left bg-gradient-to-b from-green-500 to-green-700 text-offWhite laptop:hidden">
 
     <ul class="font-roboto">
       <li class="pb-3 duration-500 hover:text-amber-400 hover:translate-x-4"><a href="index.html"><i
@@ -51,7 +51,8 @@
     class="top-0 z-40 flex flex-row self-center w-screen p-3 laptop:items-center laptop:justify-around laptop:p-6 laptop:w-screen bg-zinc-100">
     <div class="flex flex-row items-center justify-between flex-grow mx-auto align-middle laptop:justify-around">
       <a href="index.html">
-        <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring" class="h-12 pl-2 laptop:pl-0 laptop:h-20">
+        <img src="./img/logos/leaf-spring/ls-logo.svg" alt="logo leaf spring"
+          class="h-12 pl-2 lazyload laptop:pl-0 laptop:h-20">
       </a>
 
       <!-- HAMBURGER MENU MOBILE -->
@@ -60,7 +61,7 @@
         <div id="hamBtn"
           class="fixed flex flex-row p-2 text-4xl align-middle rounded-md cursor-pointer laptop:hidden right-3 top-6 bg-zinc-200">
           <img onclick="Open(this)" src="img/icons/hamburger-md-svgrepo-com.svg" alt="hamburger menu"
-            title="hamburger menu" class="h-4 laptop:hidden">
+            title="hamburger menu" class="h-4 lazyload laptop:hidden">
         </div>
 
 
@@ -102,21 +103,21 @@
   <div class="relative flex flex-col items-center justify-center">
 
     <h1
-      class="absolute z-40 flex flex-col self-center ml-0 text-5xl tracking-wider text-center uppercase laptop:self-start laptop:ml-12 laptop:text-left font-oswald vertIpadMini:text-8xl laptop:text-6xl text-offWhite">
+      class="absolute z-40 flex flex-col self-center ml-0 text-3xl tracking-wider text-center uppercase mobile:text-5xl bigHor:text-2xl tablet:text-7xl ipad:text-5xl laptop:self-start laptop:ml-12 laptop:text-left font-oswald vertIpadMini:text-8xl laptop:text-6xl text-offWhite laptop:items-center laptop:align-middle">
       Contacto</h1>
-    <img src="./img/banner/ls-inicio-main-banner.jpg" alt="banner principal leaf spring mexico"
-      class="w-screen object-cover laptop:h-[calc(50vh-144px)] h-1/2 brightness-50 bg-black">
+    <img src="./img/banner/contactoLeaf.jpg" alt="banner principal leaf spring mexico"
+      class="lazyload w-screen object-cover object-center laptop:origin-top-left laptop:h-[calc(75vh-144px)] h-[calc(100vh-400px)] brightness-50 bg-black">
   </div>
 
   <!-- CONTACTO / MAIN -->
-  <section class="w-11/12 h-auto px-10 py-20 mx-auto tablet:w-3/4 font-roboto tablet:px-20">
+  <section class="w-11/12 h-auto px-10 py-10 mx-auto laptop:py-20 tablet:w-3/4 font-roboto tablet:px-20">
     <h2 class="pb-6 text-3xl text-center tablet:text-4xl font-oswald text-verdeLeaf">¿Cómo podemos ayudarte?</h2>
     <form method="POST" id="form" action="89f8e7d18737ccf0d7b472c62b5d3b90"
-      class="self-center w-full laptop:basis-1/2 small:mb-6 laptop:mb-0 hd:pl-16 hd:pr-12 tablet:px-4">
+      class="self-center w-screen laptop:basis-1/2 small:mb-6 laptop:mb-0 hd:pl-16 hd:pr-12 tablet:px-4">
       <!-- EMAIL -->
-      <div class="relative z-0 w-full mb-6 group">
+      <div class="relative z-0 w-screen mb-6 group">
         <input type="email" name="email"
-          class="block w-full px-0 py-2 text-base font-medium text-black duration-500 bg-transparent border-0 border-b-2 appearance-none font-plex border-verdeClaroLeaf focus:border-verdeLeaf focus:outline-none focus:ring-0 peer"
+          class="block w-screen px-0 py-2 text-base font-medium text-black duration-500 bg-transparent border-0 border-b-2 appearance-none font-plex border-verdeClaroLeaf focus:border-verdeLeaf focus:outline-none focus:ring-0 peer"
           placeholder=" " required />
 
         <label for="email"
@@ -128,9 +129,9 @@
       <input type="hidden" name="_next" value="https://leafspringmexico.com/gracias.html" />
 
       <!-- NOMBRE(S) -->
-      <div class="relative z-0 w-full mb-6 group">
+      <div class="relative z-0 w-screen mb-6 group">
         <input type="text" name="name" id="name"
-          class="block w-full px-0 py-2 text-base font-medium text-black duration-500 bg-transparent border-0 border-b-2 appearance-none font-plex border-verdeClaroLeaf focus:border-verdeLeaf focus:outline-none focus:ring-0 peer"
+          class="block w-screen px-0 py-2 text-base font-medium text-black duration-500 bg-transparent border-0 border-b-2 appearance-none font-plex border-verdeClaroLeaf focus:border-verdeLeaf focus:outline-none focus:ring-0 peer"
           placeholder=" " required />
 
         <label for="name"
@@ -138,9 +139,9 @@
       </div>
 
       <!-- TELÉFONO -->
-      <div class="relative z-0 w-full mb-6 group">
+      <div class="relative z-0 w-screen mb-6 group">
         <input type="tel" pattern="[0-9]{10}" name="phone" id="phone"
-          class="block w-full px-0 py-2 text-base font-medium text-black duration-500 bg-transparent border-0 border-b-2 appearance-none font-plex border-verdeClaroLeaf focus:border-verdeLeaf focus:outline-none focus:ring-0 peer"
+          class="block w-screen px-0 py-2 text-base font-medium text-black duration-500 bg-transparent border-0 border-b-2 appearance-none font-plex border-verdeClaroLeaf focus:border-verdeLeaf focus:outline-none focus:ring-0 peer"
           placeholder=" " required />
 
         <label for="phone"
@@ -148,9 +149,9 @@
       </div>
 
       <!-- ASUNTO -->
-      <div class="relative z-0 w-full mb-6 group">
+      <div class="relative z-0 w-screen mb-6 group">
         <input type="text" name="_subject" id="asunto"
-          class="block w-full px-0 py-2 text-base font-medium text-black duration-500 bg-transparent border-0 border-b-2 appearance-none font-plex border-verdeClaroLeaf focus:border-verdeLeaf focus:outline-none focus:ring-0 peer"
+          class="block w-screen px-0 py-2 text-base font-medium text-black duration-500 bg-transparent border-0 border-b-2 appearance-none font-plex border-verdeClaroLeaf focus:border-verdeLeaf focus:outline-none focus:ring-0 peer"
           placeholder=" " required />
 
         <label for="_subject"
@@ -158,16 +159,16 @@
       </div>
 
       <!-- MENSAJE -->
-      <div class="relative z-0 w-full mb-6 group">
+      <div class="relative z-0 w-screen mb-6 group">
         <label for="message" class="block mb-2 text-base text-gray-500 duration-300 appearance-none">Mensaje:</label>
 
         <textarea type="text" name="message" id="message" rows="6"
-          class="block w-full font-plex p-3 text-black border-2 rounded-[10px] bg-white duration-300 border-verdeLeaf focus:ring-verdeClaroLeaf focus:border-verdeClaroLeaf appearance-none"
+          class="block w-screen font-plex p-3 text-black border-2 rounded-[10px] bg-white duration-300 border-verdeLeaf focus:ring-verdeClaroLeaf focus:border-verdeClaroLeaf appearance-none"
           placeholder="Por favor, platícanos tus necesidades, con gusto las atenderemos." required></textarea>
       </div>
 
       <button type="submit"
-        class="w-full px-8 py-3 mt-4 text-3xl font-bold tracking-wider duration-200 font-roboto rounded-xl active:bg-blue-900 bg-verdeClaroLeaf hover:bg-verdeLeaf text-offWhite focus:bg-verdeLeaf">
+        class="w-screen px-8 py-3 mt-4 text-3xl font-bold tracking-wider duration-200 font-roboto rounded-xl active:bg-blue-900 bg-verdeClaroLeaf hover:bg-verdeLeaf text-offWhite focus:bg-verdeLeaf">
         Enviar
       </button>
     </form>
@@ -199,7 +200,7 @@
       <!-- LOGO FOOTER -->
       <div class="justify-center laptop:col-start-1 laptop:col-end-1">
         <a href="#inicio">
-          <img class="h-16 pb-6 laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
+          <img class="h-16 pb-6 lazyload laptop:h-20" src="./img/logos/leaf-spring/ls-logo-wht.svg"
             alt="logo leaf spring mexico"></a>
       </div>
 
@@ -254,7 +255,7 @@
           class="flex pt-10 mx-auto justify-center align-middle text-[12px] font-light tracking-wide text-center laptop:justify-end laptop:text-right laptop:text-[12px] small:pt-3 tablet:col-span-2 text-neutral-300 laptop:col-span-2 font-roboto">
           <a href="#" class="flex items-center text-offWhite">creado por:
             <div>
-              <img src="./img/logos/webbyGravy-logo.svg" alt="webbyGravy diseño" class="p-0 ml-2 w-28">
+              <img src="./img/logos/webbyGravy-logo.svg" alt="webbyGravy diseño" class="p-0 ml-2 lazyload w-28">
             </div>
           </a>
         </div>
@@ -263,6 +264,8 @@
 
     <script src="js/actions.js"></script>
     <script defer src="js/disallow.js"></script>
+    <!-- IMAGE LAZYSIZES -->
+    <script src="lazysizes.min.js" async=""></script>
 </body>
 
 </html>
