@@ -1392,7 +1392,7 @@ input:checked + .toggle-bg {
 }
 
 .hidden {
-  display: none;
+  /* display: none; */
 }
 
 .h-0 {
@@ -4136,7 +4136,7 @@ input:checked + .toggle-bg {
   }
 
   .ipad\:text-5xl {
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1;
   }
 
