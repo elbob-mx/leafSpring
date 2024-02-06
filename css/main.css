@@ -1402,6 +1402,15 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -2978,6 +2987,10 @@ input:checked + .toggle-bg {
 
   .mobile\:h-screen {
     height: 100vh;
+  }
+
+  .mobile\:h-40 {
+    height: 10rem;
   }
 
   .mobile\:w-screen {
