@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -32,9 +32,11 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -44,12 +46,14 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -121,8 +125,10 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font family by default.
-2. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -131,8 +137,12 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-feature-settings: normal;
   /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
 }
 
 /*
@@ -1231,6 +1241,11 @@ input:checked + .toggle-bg {
   margin-bottom: 2rem;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1323,10 +1338,6 @@ input:checked + .toggle-bg {
   height: 0px;
 }
 
-.h-1\/2 {
-  height: 50%;
-}
-
 .h-1\/5 {
   height: 20%;
 }
@@ -1345,6 +1356,10 @@ input:checked + .toggle-bg {
 
 .h-2\/5 {
   height: 40%;
+}
+
+.h-3\/4 {
+  height: 75%;
 }
 
 .h-32 {
@@ -1371,10 +1386,6 @@ input:checked + .toggle-bg {
   height: calc(100vh - 400px);
 }
 
-.h-\[calc\(100vh-450px\)\] {
-  height: calc(100vh - 450px);
-}
-
 .h-\[calc\(100vh-64px\)\] {
   height: calc(100vh - 64px);
 }
@@ -1389,10 +1400,6 @@ input:checked + .toggle-bg {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-3\/4 {
-  height: 75%;
 }
 
 .w-1\/2 {
@@ -1948,10 +1955,6 @@ input:checked + .toggle-bg {
   background-position: left bottom;
 }
 
-.bg-top {
-  background-position: top;
-}
-
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -2001,10 +2004,6 @@ input:checked + .toggle-bg {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .p-6 {
@@ -2488,11 +2487,6 @@ input:checked + .toggle-bg {
 
 .drop-shadow-md {
   --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.saturate-50 {
-  --tw-saturate: saturate(.5);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -3456,10 +3450,6 @@ input:checked + .toggle-bg {
     height: calc(100vh - 144px);
   }
 
-  .laptop\:h-\[calc\(50vh-144px\)\] {
-    height: calc(50vh - 144px);
-  }
-
   .laptop\:h-\[calc\(75vh-144px\)\] {
     height: calc(75vh - 144px);
   }
@@ -3474,10 +3464,6 @@ input:checked + .toggle-bg {
 
   .laptop\:h-screen {
     height: 100vh;
-  }
-
-  .laptop\:h-3\/4 {
-    height: 75%;
   }
 
   .laptop\:w-32 {
@@ -3737,6 +3723,10 @@ input:checked + .toggle-bg {
     padding-top: 2rem;
   }
 
+  .laptop\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
   .laptop\:text-left {
     text-align: left;
   }
@@ -3873,10 +3863,6 @@ input:checked + .toggle-bg {
     height: 100vh;
   }
 
-  .ipad\:justify-center {
-    justify-content: center;
-  }
-
   .ipad\:self-center {
     align-self: center;
   }
@@ -3891,13 +3877,13 @@ input:checked + .toggle-bg {
     line-height: 2rem;
   }
 
-  .ipad\:text-5xl {
-    font-size: 3rem;
+  .ipad\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
-  .ipad\:text-6xl {
-    font-size: 3.75rem;
+  .ipad\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 
@@ -3909,21 +3895,6 @@ input:checked + .toggle-bg {
   .ipad\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .ipad\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .ipad\:text-9xl {
-    font-size: 8rem;
-    line-height: 1;
-  }
-
-  .ipad\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
   }
 }
 
