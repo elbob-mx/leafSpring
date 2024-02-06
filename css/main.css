@@ -3034,6 +3034,10 @@ input:checked + .toggle-bg {
     padding-top: 0px;
   }
 
+  .mobileHorSmall\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
   .mobileHorSmall\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -3110,6 +3114,10 @@ input:checked + .toggle-bg {
 
   .tablet\:w-screen {
     width: 100vw;
+  }
+
+  .tablet\:p-10 {
+    padding: 2.5rem;
   }
 
   .tablet\:px-20 {
@@ -3962,6 +3970,26 @@ input:checked + .toggle-bg {
   .hd\:text-8xl {
     font-size: 6rem;
     line-height: 1;
+  }
+
+  .hd\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .hd\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .hd\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .hd\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
