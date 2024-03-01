@@ -1241,11 +1241,6 @@ input:checked + .toggle-bg {
   margin-bottom: 2rem;
 }
 
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1366,6 +1361,10 @@ input:checked + .toggle-bg {
   height: 8rem;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -1400,15 +1399,6 @@ input:checked + .toggle-bg {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-36 {
-  height: 9rem;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .w-1\/2 {
@@ -2160,10 +2150,6 @@ input:checked + .toggle-bg {
 
 .pl-5 {
   padding-left: 1.25rem;
-}
-
-.pr-10 {
-  padding-right: 2.5rem;
 }
 
 .pr-2 {
@@ -2985,12 +2971,12 @@ input:checked + .toggle-bg {
     top: 25%;
   }
 
-  .mobile\:h-screen {
-    height: 100vh;
-  }
-
   .mobile\:h-40 {
     height: 10rem;
+  }
+
+  .mobile\:h-screen {
+    height: 100vh;
   }
 
   .mobile\:w-screen {
@@ -3028,14 +3014,6 @@ input:checked + .toggle-bg {
 
   .mobileHorSmall\:w-full {
     width: 100%;
-  }
-
-  .mobileHorSmall\:pt-0 {
-    padding-top: 0px;
-  }
-
-  .mobileHorSmall\:pt-10 {
-    padding-top: 2.5rem;
   }
 
   .mobileHorSmall\:text-sm {
@@ -3179,11 +3157,6 @@ input:checked + .toggle-bg {
 
   .tablet\:text-5xl {
     font-size: 3rem;
-    line-height: 1;
-  }
-
-  .tablet\:text-6xl {
-    font-size: 3.75rem;
     line-height: 1;
   }
 
@@ -3744,10 +3717,6 @@ input:checked + .toggle-bg {
     padding-top: 2rem;
   }
 
-  .laptop\:pb-6 {
-    padding-bottom: 1.5rem;
-  }
-
   .laptop\:text-left {
     text-align: left;
   }
@@ -3967,24 +3936,14 @@ input:checked + .toggle-bg {
     line-height: 2.25rem;
   }
 
-  .hd\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
-  .hd\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .hd\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 
-  .hd\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .hd\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 
   .hd\:text-lg {
