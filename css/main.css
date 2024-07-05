@@ -1410,6 +1410,23 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1456,6 +1473,15 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .flex-1 {
@@ -1738,6 +1764,10 @@ input:checked + .toggle-bg {
   border-width: 1.5px;
 }
 
+.border-\[1px\] {
+  border-width: 1px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1921,6 +1951,11 @@ input:checked + .toggle-bg {
 .bg-zinc-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+}
+
+.bg-emerald-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -2117,6 +2152,11 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -2187,6 +2227,18 @@ input:checked + .toggle-bg {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-left {
@@ -2997,6 +3049,10 @@ input:checked + .toggle-bg {
     width: 100vw;
   }
 
+  .mobile\:w-full {
+    width: 100%;
+  }
+
   .mobile\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -3054,6 +3110,11 @@ input:checked + .toggle-bg {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+
+  .mobileHorSmall\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -3063,6 +3124,10 @@ input:checked + .toggle-bg {
 
   .mobileHor\:top-\[7\%\] {
     top: 7%;
+  }
+
+  .mobileHor\:top-\[15\%\] {
+    top: 15%;
   }
 
   .mobileHor\:h-auto {
@@ -3096,6 +3161,16 @@ input:checked + .toggle-bg {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+
+  .mobileHor\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .mobileHor\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 767px) {
@@ -3121,6 +3196,10 @@ input:checked + .toggle-bg {
 
   .tablet\:w-screen {
     width: 100vw;
+  }
+
+  .tablet\:w-full {
+    width: 100%;
   }
 
   .tablet\:p-10 {
@@ -3316,6 +3395,10 @@ input:checked + .toggle-bg {
 
   .vertIpadMini\:w-screen {
     width: 100vw;
+  }
+
+  .vertIpadMini\:w-full {
+    width: 100%;
   }
 
   .vertIpadMini\:text-2xl {
@@ -3960,6 +4043,21 @@ input:checked + .toggle-bg {
     padding-right: 10rem;
   }
 
+  .hd\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .hd\:px-52 {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
+  .hd\:px-48 {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
   .hd\:pl-16 {
     padding-left: 4rem;
   }
@@ -3990,6 +4088,16 @@ input:checked + .toggle-bg {
 
   .hd\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .hd\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .hd\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
