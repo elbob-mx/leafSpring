@@ -1094,6 +1094,10 @@ input:checked + .toggle-bg {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   inset: 0px;
 }
@@ -1239,6 +1243,11 @@ input:checked + .toggle-bg {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-1 {
@@ -1401,11 +1410,6 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -1452,15 +1456,6 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .flex-1 {
@@ -1926,21 +1921,6 @@ input:checked + .toggle-bg {
 .bg-zinc-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
-}
-
-.bg-zinc-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(82 82 91 / var(--tw-bg-opacity));
-}
-
-.bg-offBlack {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 22 22 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#f372b6\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 114 182 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -2514,6 +2494,11 @@ input:checked + .toggle-bg {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.drop-shadow-lg {
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -2710,21 +2695,6 @@ input:checked + .toggle-bg {
 .hover\:text-yellow-400:hover {
   --tw-text-opacity: 1;
   color: rgb(227 160 8 / var(--tw-text-opacity));
-}
-
-.hover\:text-red-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(240 82 82 / var(--tw-text-opacity));
-}
-
-.hover\:text-red-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(224 36 36 / var(--tw-text-opacity));
-}
-
-.hover\:text-emerald-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(5 150 105 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-lg:hover {
@@ -3027,9 +2997,9 @@ input:checked + .toggle-bg {
     width: 100vw;
   }
 
-  .mobile\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .mobile\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .mobile\:text-5xl {
@@ -3040,6 +3010,21 @@ input:checked + .toggle-bg {
   .mobile\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .mobile\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .mobile\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .mobile\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -3170,6 +3155,11 @@ input:checked + .toggle-bg {
   .tablet\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .tablet\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .tablet\:pb-10 {
@@ -3761,6 +3751,10 @@ input:checked + .toggle-bg {
     padding-top: 2rem;
   }
 
+  .laptop\:pr-0 {
+    padding-right: 0px;
+  }
+
   .laptop\:text-left {
     text-align: left;
   }
@@ -3874,11 +3868,6 @@ input:checked + .toggle-bg {
     --tw-text-opacity: 1;
     color: rgb(227 160 8 / var(--tw-text-opacity));
   }
-
-  .laptop\:hover\:text-amber-400:hover {
-    --tw-text-opacity: 1;
-    color: rgb(251 191 36 / var(--tw-text-opacity));
-  }
 }
 
 @media (min-width: 1023px) {
@@ -3962,6 +3951,10 @@ input:checked + .toggle-bg {
     align-self: center;
   }
 
+  .hd\:p-0 {
+    padding: 0px;
+  }
+
   .hd\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
@@ -4006,6 +3999,10 @@ input:checked + .toggle-bg {
     margin-top: 0.75rem;
   }
 
+  .fhd\:p-0 {
+    padding: 0px;
+  }
+
   .fhd\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -4016,13 +4013,18 @@ input:checked + .toggle-bg {
     padding-bottom: 0.75rem;
   }
 
-  .fhd\:text-7xl {
-    font-size: 4.5rem;
+  .fhd\:text-9xl {
+    font-size: 8rem;
     line-height: 1;
   }
 
   .fhd\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .fhd\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }
