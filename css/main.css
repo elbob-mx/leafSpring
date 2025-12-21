@@ -2168,11 +2168,6 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -3473,10 +3468,6 @@ input:checked + .toggle-bg {
     grid-column-start: 5;
   }
 
-  .laptop\:col-start-4 {
-    grid-column-start: 4;
-  }
-
   .laptop\:col-end-1 {
     grid-column-end: 1;
   }
@@ -3514,12 +3505,12 @@ input:checked + .toggle-bg {
     margin-left: 3rem;
   }
 
-  .laptop\:mt-0 {
-    margin-top: 0px;
-  }
-
   .laptop\:mr-2 {
     margin-right: 0.5rem;
+  }
+
+  .laptop\:mt-0 {
+    margin-top: 0px;
   }
 
   .laptop\:block {
@@ -3740,20 +3731,16 @@ input:checked + .toggle-bg {
     padding: 5rem;
   }
 
+  .laptop\:p-3 {
+    padding: 0.75rem;
+  }
+
   .laptop\:p-4 {
     padding: 1rem;
   }
 
   .laptop\:p-6 {
     padding: 1.5rem;
-  }
-
-  .laptop\:p-2 {
-    padding: 0.5rem;
-  }
-
-  .laptop\:p-3 {
-    padding: 0.75rem;
   }
 
   .laptop\:px-0 {
