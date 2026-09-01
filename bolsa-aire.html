@@ -83,8 +83,14 @@
 
   <!-- PRODUCTOS / MAIN -->
   <section class="flex flex-col w-full h-full bg-neutral-400">
-    <div class="flex w-full h-screen bg-neutral-400">
-      <object data="./assets/pdf/gabriel/gabriel-bolsas.pdf" type="application/pdf" class="w-10/12 h-full pt-10 pb-5 mx-auto laptop:pt-20 laptop:pb-10"></object>
+    <div class="flex flex-col w-full h-screen bg-neutral-400">
+      <div class="flex justify-center w-full px-6 py-4 bg-yellow-100 border-l-4 border-yellow-500">
+        <p class="flex items-center text-sm font-semibold text-yellow-800 laptop:text-base">
+          <i class="mr-3 text-lg fa-solid fa-triangle-exclamation"></i>Advertencia: Este catálogo contiene múltiples páginas. La carga puede tardar unos segundos y consumir datos móviles. Se recomienda usar conexión WiFi.
+        </p>
+      </div>
+      <iframe src="./assets/pdf/gabriel/gabriel-bolsas.pdf" class="w-full h-full" frameborder="0" allowfullscreen>
+      </iframe>
     </div>
 
     <!-- DESTACADOS BOLSA DE AIRE -->
